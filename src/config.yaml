@@ -1,5 +1,5 @@
 site:
-  name: Oumaima Elghalbouni
+  name: Oumaima Elghalbouni | Data Engineer
   site: 'https://elghalbouni-oumaima.github.io'
   base: '/'
   trailingSlash: false
@@ -11,7 +11,7 @@ metadata:
   title:
     default: Data Engineering Student
     template: '%s — AstroWind'
-  description: "\U0001F680 Portfolio of Oumaima, Data Engineering student."
+  description: "\U0001F680 Portfolio of a 2nd-year Data Engineering student specializing in Big Data and Cloud."
   robots:
     index: true
     follow: true
