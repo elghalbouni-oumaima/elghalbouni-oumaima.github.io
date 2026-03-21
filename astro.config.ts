@@ -23,8 +23,6 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   site: 'https://elghalbouni-oumaima.github.io',
-  base: '/portfolio',
-
   output: 'static',
 
   integrations: [
