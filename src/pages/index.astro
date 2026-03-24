@@ -173,92 +173,99 @@ const metadata = {
   />
 
   <!-- PROJECTS -->
-  <BlogLatestPosts
-    id="projects"
-    title="Technical Projects & Case Studies"
-    information={`A selection of projects showcasing my skills in data analysis, application development, and database systems.`}
-  >
-    <Fragment slot="content">
-      <div class="grid gap-6">
-        <!-- PROJECT 1 -->
-        <div class="p-5 border rounded-xl dark:border-gray-700">
-          <h3 class="text-xl font-bold mb-2">
-            End-to-End Data Warehouse with SQL
-          </h3>
-          <p class="text-sm mb-2 text-gray-500">
-            SQL • Data Warehousing • ETL • Data Modeling
+  <section id="projects" class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    
+    <h2 class="text-3xl font-bold text-center mb-4">My Projects</h2>
+    <p class="text-center text-gray-500 mb-10">
+      A selection of projects showcasing my skills in data engineering, data analysis, and development.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- PROJECT 1 -->
+      <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/images/data-warehouse.png" alt="Data Warehouse" class="w-full h-48 object-cover" />
+
+        <div class="p-5">
+          <h3 class="text-xl font-bold mb-2">End-to-End Data Warehouse</h3>
+          <p class="text-sm text-gray-500 mb-3">
+            SQL • Airflow • Power BI • ETL
           </p>
 
-          <p>
-            Designed and implemented a complete data warehouse solution using
-            SQL, following modern data engineering practices. The project
-            includes data modeling, ETL processes, and analytical querying for
-            decision support.
+          <p class="mb-4">
+            Designed a complete data warehouse with ETL pipelines, data modeling, and dashboards for business insights.
           </p>
 
-          <ul class="list-disc ml-5 mt-2 text-sm">
-            <li>
-              Designed relational schema and star schema for analytical queries
-            </li>
-            <li>
-              Implemented ETL pipeline (Extract, Transform, Load) to clean and
-              structure data
-            </li>
-            <li>Built fact and dimension tables for optimized querying</li>
-            <li>Executed complex SQL queries for business insights</li>
-          </ul>
-
-          <p class="mt-2 text-sm text-gray-600">
-            📌 Demonstrates full data pipeline from raw data to analytics-ready
-            warehouse
-          </p>
-
-          <a
-            href="https://github.com/elghalbouni-oumaima/End-to-End-Data-Warehouse-with-SQL"
-            target="_blank"
-            class="text-blue-600 text-sm font-semibold"
-          >
-            View on GitHub →
-          </a>
-        </div>
-
-        <!-- PROJECT 2 -->
-        <div class="p-5 border rounded-xl dark:border-gray-700">
-          <h3 class="text-xl font-bold mb-2">
-            FHV Trip Data Optimization with MongoDB
-          </h3>
-          <p class="text-sm mb-2 text-gray-500">
-            MongoDB • NoSQL • Query Optimization • Big Data
-          </p>
-
-          <p>
-            Optimized large-scale trip data queries using MongoDB, focusing on
-            performance improvement and efficient data retrieval. The project
-            explores NoSQL data modeling and query optimization techniques.
-          </p>
-
-          <ul class="list-disc ml-5 mt-2 text-sm">
-            <li>Handled large FHV trip dataset using MongoDB collections</li>
-            <li>Optimized queries using indexing and aggregation pipelines</li>
-            <li>Improved query execution performance and response time</li>
-            <li>Analyzed transportation data for insights and trends</li>
-          </ul>
-
-          <p class="mt-2 text-sm text-gray-600">
-            📌 Focus on performance optimization and NoSQL data processing
-          </p>
-
-          <a
-            href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization"
-            target="_blank"
-            class="text-blue-600 text-sm font-semibold"
-          >
-            View on GitHub →
+          <a href="https://github.com/elghalbouni-oumaima/End-to-End-Data-Warehouse-with-SQL"
+             target="_blank"
+             class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+            View Project
           </a>
         </div>
       </div>
-    </Fragment>
-  </BlogLatestPosts>
+
+      <!-- PROJECT 2 -->
+      <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/images/mongodb.png" alt="MongoDB Project" class="w-full h-48 object-cover" />
+
+        <div class="p-5">
+          <h3 class="text-xl font-bold mb-2">FHV Trip Data Optimization</h3>
+          <p class="text-sm text-gray-500 mb-3">
+            MongoDB • Spark • Hadoop • Big Data
+          </p>
+
+          <p class="mb-4">
+            Optimized large-scale trip data using MongoDB, Spark, and Hadoop to improve performance and analytics.
+          </p>
+
+          <a href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization"
+             target="_blank"
+             class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+            View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/images/medical.png" alt="Medical System" class="w-full h-48 object-cover" />
+
+        <div class="p-5">
+          <h3 class="text-xl font-bold mb-2">Medical Data Management System</h3>
+          <p class="text-sm text-gray-500 mb-3">
+            Python • MySQL • PHP • Data Analysis
+          </p>
+
+          <p class="mb-4">
+            Built a system to manage patient data and generate statistical insights using Python and web technologies.
+          </p>
+
+          <span class="text-sm text-gray-400">Private Project</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/images/hotel.png" alt="Hotel System" class="w-full h-48 object-cover" />
+
+        <div class="p-5">
+          <h3 class="text-xl font-bold mb-2">Hotel Management System</h3>
+          <p class="text-sm text-gray-500 mb-3">
+            C • System Design
+          </p>
+
+          <p class="mb-4">
+            Developed a role-based hotel management system handling reservations, employees, and reporting.
+          </p>
+
+          <span class="text-sm text-gray-400">Academic Project</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- CTA -->
   <CallToAction
