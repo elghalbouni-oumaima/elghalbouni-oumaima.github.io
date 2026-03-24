@@ -4,11 +4,9 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-// import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-// import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
@@ -18,6 +16,7 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <!-- HERO -->
   <Hero
     actions={[
       {
@@ -29,60 +28,66 @@ const metadata = {
       },
       { text: 'View Projects', href: '#projects' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Oumaima Elghalbouni Portfolio' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Oumaima Portfolio' }}
   >
     <Fragment slot="title">
-      Building Scalable <span class="text-accent dark:text-white">Data Solutions</span> & Distributed Systems
+      Building <span class="text-accent dark:text-white">Data-Driven Applications</span> & Analytical Solutions
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="font-semibold text-blue-600">Oumaima Elghalbouni</span> — 2nd Year Data Engineering Student. 
-      Focused on Big Data orchestration with <span class="font-semibold">Apache Airflow</span>, 
-      cloud infrastructure on <span class="font-semibold">OCI</span>, and automated development workflows.
+      <span class="font-semibold text-blue-600">Oumaima Elghalbouni</span> — Data Engineering Student  
+      Passionate about transforming raw data into insights using <span class="font-semibold">Python, SQL, and Data Visualization</span>,  
+      and developing real-world applications combining data and software.
     </Fragment>
   </Hero>
 
-  <Note title="Mission:" description="Transforming raw data into actionable insights through robust ETL pipelines and cloud-native architecture." />
+  <!-- NOTE -->
+  <Note 
+    title="Mission:" 
+    description="Designing and developing data-driven systems that collect, process, analyze, and visualize data to support decision-making." 
+  />
 
+  <!-- FEATURES / SKILLS -->
   <Features
     id="skills"
     tagline="Technical Stack"
-    title="Data Engineering & Cloud Tools"
-    subtitle="A comprehensive look at the technologies I use to build and orchestrate data-driven applications."
+    title="My Skills & Technologies"
+    subtitle="A practical overview of the tools and technologies I use in my projects."
     items={[
       {
-        title: 'Big Data Orchestration',
-        description: 'Building and monitoring complex ETL pipelines using Apache Airflow, Hadoop (HDFS), and Trino.',
-        icon: 'tabler:settings-automation',
+        title: 'Data Analysis & Visualization',
+        description: 'Analyzing and visualizing data using Pandas, NumPy, and Matplotlib to extract meaningful insights.',
+        icon: 'tabler:chart-bar',
       },
       {
-        title: 'Cloud Infrastructure',
-        description: 'Currently specializing in Oracle Cloud Infrastructure (OCI). Working toward Foundations Associate certification.',
-        icon: 'tabler:cloud-computing',
+        title: 'Database Management',
+        description: 'Designing and querying relational databases with MySQL and SQL, including joins, optimization, and data modeling.',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Python Development',
+        description: 'Developing data applications and automation scripts using Python (Tkinter, PyQt5, Flask).',
+        icon: 'tabler:brand-python',
       },
       {
         title: 'Machine Learning',
-        description: 'Mastering preprocessing techniques (SMOTE), optimization algorithms (Adam, BFGS), and model performance tuning.',
+        description: 'Applying preprocessing techniques and building predictive models for data-driven decision making.',
         icon: 'tabler:brain',
       },
       {
-        title: 'DevOps & Automation',
-        description: 'Automating development with Docker Compose and managing CI/CD pipelines via GitHub Actions.',
-        icon: 'tabler:container',
+        title: 'Web Development',
+        description: 'Building dynamic web applications using PHP, HTML, CSS, and integrating them with MySQL databases.',
+        icon: 'tabler:world',
       },
       {
-        title: 'Programming',
-        description: 'Proficient in Python, SQL, and PHP for back-end development and data manipulation.',
-        icon: 'tabler:code',
-      },
-      {
-        title: 'Modern Web Development',
-        description: 'Building high-performance portfolios and applications using Astro, Tailwind CSS, and GitHub Pages.',
-        icon: 'tabler:brand-astro',
+        title: 'Tools & Environment',
+        description: 'Working with Git, GitHub, Power BI, Linux, and modern development environments.',
+        icon: 'tabler:tool',
       },
     ]}
   />
 
+  <!-- ABOUT -->
   <Content
     id="about"
     isReversed
@@ -90,26 +95,28 @@ const metadata = {
     title="About Me & Academic Journey"
     items={[
       {
-        title: 'University Specialization',
-        description: 'Focused on distributed systems and data-driven application development in my second year.',
+        title: 'Data Engineering Student',
+        description: 'Currently in my second year, building strong foundations in programming, databases, and data analysis.',
       },
       {
-        title: 'Multilingual Background',
-        description: 'Fluent in Arabic, French, and English, allowing for seamless collaboration in international technical environments.',
+        title: 'Project-Based Learning',
+        description: 'Developed projects such as medical data management systems, dashboards, and data analysis tools.',
       },
       {
-        title: 'Problem Solver',
-        description: 'Passionate about translating complex technical concepts into efficient, automated code.',
+        title: 'Goal',
+        description: 'Seeking an internship to apply my skills in data engineering, data analysis, and real-world problem solving.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2070&q=80',
-      alt: 'Professional Collaboration',
+      alt: 'Collaboration',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Bridge between Data & Infrastructure</h3>
-      I focus on creating systems that are not only functional but also scalable and highly performant.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        From Data to Real Applications
+      </h3>
+      I enjoy building complete solutions — from data collection and storage to analysis, visualization, and user interaction through applications.
     </Fragment>
 
     <Fragment slot="bg">
@@ -117,41 +124,44 @@ const metadata = {
     </Fragment>
   </Content>
 
+  <!-- STEPS -->
   <Steps
-    title="Professional Certification Roadmap"
+    title="My Learning Journey"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">OCI Foundations 2025</span>',
-        description: "Intensive preparation for the 1Z0-1085-25 exam, focusing on core cloud concepts and OCI services.",
-        icon: 'tabler:certificate',
+        title: 'Step 1: <span class="font-medium">Strong Foundations</span>',
+        description: "Learning programming, SQL, and data analysis fundamentals.",
+        icon: 'tabler:school',
       },
       {
-        title: 'Step 2: <span class="font-medium">Data Orchestration Mastery</span>',
-        description: "Advanced hands-on workshops with Apache Airflow to handle large-scale data transformation tasks.",
+        title: 'Step 2: <span class="font-medium">Building Projects</span>',
+        description: "Developing real-world applications combining Python, databases, and web technologies.",
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Advanced Topics</span>',
+        description: "Exploring machine learning, data engineering concepts, and data pipelines.",
         icon: 'tabler:database',
       },
       {
-        title: 'Step 3: <span class="font-medium">Portfolio Launch</span>',
-        description: 'Deploying my professional identity using Astro and automated GitHub Pages pipelines.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Ready for Internships!',
+        title: 'Ready for Internship',
         icon: 'tabler:check',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?auto=format&fit=crop&w=987&q=80',
-      alt: 'Growth Roadmap',
+      alt: 'Growth',
     }}
   />
 
+  <!-- PROJECTS -->
   <BlogLatestPosts
     id="projects"
-    title="Technical Projects & Case Studies"
-    information={`Explore my work in medical management statistics, Airflow ETL pipelines, and machine learning model optimization.`}
+    title="Technical Projects"
+    information={`Explore my projects including medical data management systems, dashboards, and data analysis applications built with Python, SQL, and web technologies.`}
   />
 
+  <!-- CTA -->
   <CallToAction
     actions={[
       {
@@ -164,11 +174,11 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Let's build something <span class="text-accent">impactful</span> together.
+      Let's build something <span class="text-accent">data-driven</span> together.
     </Fragment>
 
     <Fragment slot="subtitle">
-      I am currently open to internship opportunities and collaborations in Data Engineering and Cloud Computing.
+      I am open to internships and collaborations in Data Engineering, Data Analysis, and Software Development.
     </Fragment>
   </CallToAction>
 </Layout>
