@@ -164,7 +164,7 @@ export const footerData = {
     { text: 'Portfolio', href: getPermalink('/') },
   ],
   socialLinks: [
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'www.linkedin.com/in/el-ghalbouni-oumaima-a73a26331' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/el-ghalbouni-oumaima-a73a26331/' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/elghalbouni-oumaima' },
   ],
   footNote: `
