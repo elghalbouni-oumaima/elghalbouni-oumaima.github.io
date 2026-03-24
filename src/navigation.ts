@@ -168,6 +168,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/elghalbouni-oumaima' },
   ],
   footNote: `
-   Built by Oumaima Elghalbouni · ${new Date().getFullYear()}
+   Built by Oumaima El Ghalbouni · ${new Date().getFullYear()}
   `,
 };
