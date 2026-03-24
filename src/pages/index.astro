@@ -1,16 +1,16 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from "~/layouts/PageLayout.astro";
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import Hero from "~/components/widgets/Hero.astro";
+import Note from "~/components/widgets/Note.astro";
+import Features from "~/components/widgets/Features.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Content from "~/components/widgets/Content.astro";
+import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
 
 const metadata = {
-  title: 'Oumaima Elghalbouni | Data Engineering Portfolio',
+  title: "Oumaima Elghalbouni | Data Engineering Portfolio",
   ignoreTitleTemplate: true,
 };
 ---
@@ -20,31 +20,34 @@ const metadata = {
   <Hero
     actions={[
       {
-        variant: 'primary',
-        text: 'Download CV',
-        href: '/resume.pdf',
-        target: '_blank',
-        icon: 'tabler:file-download',
+        variant: "primary",
+        text: "Download CV",
+        href: "/resume.pdf",
+        target: "_blank",
+        icon: "tabler:file-download",
       },
-      { text: 'View Projects', href: '#projects' },
+      { text: "View Projects", href: "#projects" },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Oumaima Portfolio' }}
+    image={{ src: "~/assets/images/hero-image.png", alt: "Oumaima Portfolio" }}
   >
     <Fragment slot="title">
-      Building <span class="text-accent dark:text-white">Data-Driven Applications</span> & Analytical Solutions
+      Building <span class="text-accent dark:text-white"
+        >Data-Driven Applications</span
+      > & Analytical Solutions
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="font-semibold text-blue-600">Oumaima Elghalbouni</span> — Data Engineering Student  
-      Passionate about transforming raw data into insights using <span class="font-semibold">Python, SQL, and Data Visualization</span>,  
+      <span class="font-semibold text-blue-600">Oumaima Elghalbouni</span> — Data
+      Engineering Student Passionate about transforming raw data into insights using
+      <span class="font-semibold">Python, SQL, and Data Visualization</span>,
       and developing real-world applications combining data and software.
     </Fragment>
   </Hero>
 
   <!-- NOTE -->
-  <Note 
-    title="Mission:" 
-    description="Designing and developing data-driven systems that collect, process, analyze, and visualize data to support decision-making." 
+  <Note
+    title="Mission:"
+    description="Designing and developing data-driven systems that collect, process, analyze, and visualize data to support decision-making."
   />
 
   <!-- FEATURES / SKILLS -->
@@ -55,34 +58,40 @@ const metadata = {
     subtitle="A practical overview of the tools and technologies I use in my projects."
     items={[
       {
-        title: 'Data Analysis & Visualization',
-        description: 'Analyzing and visualizing data using Pandas, NumPy, and Matplotlib to extract meaningful insights.',
-        icon: 'tabler:chart-bar',
+        title: "Data Analysis & Visualization",
+        description:
+          "Analyzing and visualizing data using Pandas, NumPy, and Matplotlib to extract meaningful insights.",
+        icon: "tabler:chart-bar",
       },
       {
-        title: 'Database Management',
-        description: 'Designing and querying relational databases with MySQL and SQL, including joins, optimization, and data modeling.',
-        icon: 'tabler:database',
+        title: "Database Management",
+        description:
+          "Designing and querying relational databases with MySQL and SQL, including joins, optimization, and data modeling.",
+        icon: "tabler:database",
       },
       {
-        title: 'Python Development',
-        description: 'Developing data applications and automation scripts using Python (Tkinter, PyQt5, Flask).',
-        icon: 'tabler:brand-python',
+        title: "Python Development",
+        description:
+          "Developing data applications and automation scripts using Python (Tkinter, PyQt5, Flask).",
+        icon: "tabler:brand-python",
       },
       {
-        title: 'Machine Learning',
-        description: 'Applying preprocessing techniques and building predictive models for data-driven decision making.',
-        icon: 'tabler:brain',
+        title: "Machine Learning",
+        description:
+          "Applying preprocessing techniques and building predictive models for data-driven decision making.",
+        icon: "tabler:brain",
       },
       {
-        title: 'Web Development',
-        description: 'Building dynamic web applications using PHP, HTML, CSS, and integrating them with MySQL databases.',
-        icon: 'tabler:world',
+        title: "Web Development",
+        description:
+          "Building dynamic web applications using PHP, HTML, CSS, and integrating them with MySQL databases.",
+        icon: "tabler:world",
       },
       {
-        title: 'Tools & Environment',
-        description: 'Working with Git, GitHub, Power BI, Linux, and modern development environments.',
-        icon: 'tabler:tool',
+        title: "Tools & Environment",
+        description:
+          "Working with Git, GitHub, Power BI, Linux, and modern development environments.",
+        icon: "tabler:tool",
       },
     ]}
   />
@@ -95,28 +104,34 @@ const metadata = {
     title="About Me & Academic Journey"
     items={[
       {
-        title: 'Data Engineering Student',
-        description: 'Currently in my second year, building strong foundations in programming, databases, and data analysis.',
+        title: "Data Engineering Student",
+        description:
+          "Currently in my second year, building strong foundations in programming, databases, and data analysis.",
       },
       {
-        title: 'Project-Based Learning',
-        description: 'Developed projects such as medical data management systems, dashboards, and data analysis tools.',
+        title: "Project-Based Learning",
+        description:
+          "Developed projects such as medical data management systems, dashboards, and data analysis tools.",
       },
       {
-        title: 'Goal',
-        description: 'Seeking an internship to apply my skills in data engineering, data analysis, and real-world problem solving.',
+        title: "Goal",
+        description:
+          "Seeking an internship to apply my skills in data engineering, data analysis, and real-world problem solving.",
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2070&q=80',
-      alt: 'Collaboration',
+      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2070&q=80",
+      alt: "Collaboration",
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      <h3
+        class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"
+      >
         From Data to Real Applications
       </h3>
-      I enjoy building complete solutions — from data collection and storage to analysis, visualization, and user interaction through applications.
+      I enjoy building complete solutions — from data collection and storage to analysis,
+      visualization, and user interaction through applications.
     </Fragment>
 
     <Fragment slot="bg">
@@ -130,115 +145,130 @@ const metadata = {
     items={[
       {
         title: 'Step 1: <span class="font-medium">Strong Foundations</span>',
-        description: "Learning programming, SQL, and data analysis fundamentals.",
-        icon: 'tabler:school',
+        description:
+          "Learning programming, SQL, and data analysis fundamentals.",
+        icon: "tabler:school",
       },
       {
         title: 'Step 2: <span class="font-medium">Building Projects</span>',
-        description: "Developing real-world applications combining Python, databases, and web technologies.",
-        icon: 'tabler:code',
+        description:
+          "Developing real-world applications combining Python, databases, and web technologies.",
+        icon: "tabler:code",
       },
       {
         title: 'Step 3: <span class="font-medium">Advanced Topics</span>',
-        description: "Exploring machine learning, data engineering concepts, and data pipelines.",
-        icon: 'tabler:database',
+        description:
+          "Exploring machine learning, data engineering concepts, and data pipelines.",
+        icon: "tabler:database",
       },
       {
-        title: 'Ready for Internship',
-        icon: 'tabler:check',
+        title: "Ready for Internship",
+        icon: "tabler:check",
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?auto=format&fit=crop&w=987&q=80',
-      alt: 'Growth',
+      src: "https://images.unsplash.com/photo-1616198814651-e71f960c3180?auto=format&fit=crop&w=987&q=80",
+      alt: "Growth",
     }}
   />
 
   <!-- PROJECTS -->
   <BlogLatestPosts
-  id="projects"
-  title="Technical Projects & Case Studies"
-  information={`A selection of projects showcasing my skills in data analysis, application development, and database systems.`}
->
-  <Fragment slot="content">
-    <div class="grid gap-6">
+    id="projects"
+    title="Technical Projects & Case Studies"
+    information={`A selection of projects showcasing my skills in data analysis, application development, and database systems.`}
+  >
+    <Fragment slot="content">
+      <div class="grid gap-6">
+        <!-- PROJECT 1 -->
+        <div class="p-5 border rounded-xl dark:border-gray-700">
+          <h3 class="text-xl font-bold mb-2">
+            End-to-End Data Warehouse with SQL
+          </h3>
+          <p class="text-sm mb-2 text-gray-500">
+            SQL • Data Warehousing • ETL • Data Modeling
+          </p>
 
-      <!-- PROJECT 1 -->
-      <div class="p-5 border rounded-xl dark:border-gray-700">
-        <h3 class="text-xl font-bold mb-2">
-          End-to-End Data Warehouse with SQL
-        </h3>
-        <p class="text-sm mb-2 text-gray-500">
-          SQL • Data Warehousing • ETL • Data Modeling
-        </p>
+          <p>
+            Designed and implemented a complete data warehouse solution using
+            SQL, following modern data engineering practices. The project
+            includes data modeling, ETL processes, and analytical querying for
+            decision support.
+          </p>
 
-        <p>
-          Designed and implemented a complete data warehouse solution using SQL, following modern data engineering practices.
-          The project includes data modeling, ETL processes, and analytical querying for decision support.
-        </p>
+          <ul class="list-disc ml-5 mt-2 text-sm">
+            <li>
+              Designed relational schema and star schema for analytical queries
+            </li>
+            <li>
+              Implemented ETL pipeline (Extract, Transform, Load) to clean and
+              structure data
+            </li>
+            <li>Built fact and dimension tables for optimized querying</li>
+            <li>Executed complex SQL queries for business insights</li>
+          </ul>
 
-        <ul class="list-disc ml-5 mt-2 text-sm">
-          <li>Designed relational schema and star schema for analytical queries</li>
-          <li>Implemented ETL pipeline (Extract, Transform, Load) to clean and structure data</li>
-          <li>Built fact and dimension tables for optimized querying</li>
-          <li>Executed complex SQL queries for business insights</li>
-        </ul>
+          <p class="mt-2 text-sm text-gray-600">
+            📌 Demonstrates full data pipeline from raw data to analytics-ready
+            warehouse
+          </p>
 
-        <p class="mt-2 text-sm text-gray-600">
-          📌 Demonstrates full data pipeline from raw data to analytics-ready warehouse
-        </p>
+          <a
+            href="https://github.com/elghalbouni-oumaima/End-to-End-Data-Warehouse-with-SQL"
+            target="_blank"
+            class="text-blue-600 text-sm font-semibold"
+          >
+            View on GitHub →
+          </a>
+        </div>
 
-        <a href="https://github.com/elghalbouni-oumaima/End-to-End-Data-Warehouse-with-SQL" 
-          target="_blank" 
-          class="text-blue-600 text-sm font-semibold">
-          View on GitHub →
-        </a>
+        <!-- PROJECT 2 -->
+        <div class="p-5 border rounded-xl dark:border-gray-700">
+          <h3 class="text-xl font-bold mb-2">
+            FHV Trip Data Optimization with MongoDB
+          </h3>
+          <p class="text-sm mb-2 text-gray-500">
+            MongoDB • NoSQL • Query Optimization • Big Data
+          </p>
+
+          <p>
+            Optimized large-scale trip data queries using MongoDB, focusing on
+            performance improvement and efficient data retrieval. The project
+            explores NoSQL data modeling and query optimization techniques.
+          </p>
+
+          <ul class="list-disc ml-5 mt-2 text-sm">
+            <li>Handled large FHV trip dataset using MongoDB collections</li>
+            <li>Optimized queries using indexing and aggregation pipelines</li>
+            <li>Improved query execution performance and response time</li>
+            <li>Analyzed transportation data for insights and trends</li>
+          </ul>
+
+          <p class="mt-2 text-sm text-gray-600">
+            📌 Focus on performance optimization and NoSQL data processing
+          </p>
+
+          <a
+            href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization"
+            target="_blank"
+            class="text-blue-600 text-sm font-semibold"
+          >
+            View on GitHub →
+          </a>
+        </div>
       </div>
-
-      <!-- PROJECT 2 -->
-      <div class="p-5 border rounded-xl dark:border-gray-700">
-        <h3 class="text-xl font-bold mb-2">
-          FHV Trip Data Optimization with MongoDB
-        </h3>
-        <p class="text-sm mb-2 text-gray-500">
-          MongoDB • NoSQL • Query Optimization • Big Data
-        </p>
-
-        <p>
-          Optimized large-scale trip data queries using MongoDB, focusing on performance improvement and efficient data retrieval.
-          The project explores NoSQL data modeling and query optimization techniques.
-        </p>
-
-        <ul class="list-disc ml-5 mt-2 text-sm">
-          <li>Handled large FHV trip dataset using MongoDB collections</li>
-          <li>Optimized queries using indexing and aggregation pipelines</li>
-          <li>Improved query execution performance and response time</li>
-          <li>Analyzed transportation data for insights and trends</li>
-        </ul>
-
-        <p class="mt-2 text-sm text-gray-600">
-          📌 Focus on performance optimization and NoSQL data processing
-        </p>
-
-        <a href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization" 
-          target="_blank" 
-          class="text-blue-600 text-sm font-semibold">
-          View on GitHub →
-        </a>
-      </div>
-    </div>
-  </Fragment>
-</BlogLatestPosts>
+    </Fragment>
+  </BlogLatestPosts>
 
   <!-- CTA -->
   <CallToAction
     actions={[
       {
-        variant: 'primary',
-        text: 'Contact Me on LinkedIn',
-        href: 'www.linkedin.com/in/el-ghalbouni-oumaima-a73a26331',
-        target: '_blank',
-        icon: 'tabler:brand-linkedin',
+        variant: "primary",
+        text: "Contact Me on LinkedIn",
+        href: "www.linkedin.com/in/el-ghalbouni-oumaima-a73a26331",
+        target: "_blank",
+        icon: "tabler:brand-linkedin",
       },
     ]}
   >
@@ -247,8 +277,9 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      I am open to internship opportunities and collaborations in Data Engineering, Data Analysis, and Data Science,
-      aiming to apply my skills to real-world projects.
+      I am open to internship opportunities and collaborations in Data
+      Engineering, Data Analysis, and Data Science, aiming to apply my skills to
+      real-world projects.
     </Fragment>
   </CallToAction>
 </Layout>
