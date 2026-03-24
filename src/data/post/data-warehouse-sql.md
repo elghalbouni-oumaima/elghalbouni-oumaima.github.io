@@ -3,7 +3,7 @@
 publishDate: 2026-03-24T00:00:00Z
 title: End-to-End Data Warehouse with SQL & Analytics
 excerpt: Designed and implemented a complete data warehouse with ETL pipelines, Apache Airflow, and Power BI dashboards for actionable business insights.
-image: /src/assets/images/data-warehouse.png
+image: /images/data-warehouse.png
 category: Data Engineering
 tags:
   - SQL
