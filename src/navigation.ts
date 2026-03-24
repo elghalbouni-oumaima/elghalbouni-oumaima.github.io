@@ -2,7 +2,6 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    {
         {
           text: 'About',
           href: getPermalink('#about'),
@@ -19,8 +18,6 @@ export const headerData = {
           text: 'Blog',
           href: getPermalink(),
         },
-    },
-  ],
   //   {
   //     text: 'Pages',
   //     links: [
@@ -112,7 +109,7 @@ export const headerData = {
   //     text: 'Widgets',
   //     href: '#',
   //   },
-  // ],
+  ],
   actions: [{ text: 'Download CV', href: getAsset('/resume.pdf'), target: '_blank' }],
 };
 
