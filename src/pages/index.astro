@@ -156,10 +156,79 @@ const metadata = {
 
   <!-- PROJECTS -->
   <BlogLatestPosts
-    id="projects"
-    title="Technical Projects"
-    information={`Explore my projects including medical data management systems, dashboards, and data analysis applications built with Python, SQL, and web technologies.`}
-  />
+  id="projects"
+  title="Technical Projects & Case Studies"
+  information={`A selection of projects showcasing my skills in data analysis, application development, and database systems.`}
+>
+  <Fragment slot="content">
+    <div class="grid gap-6">
+
+      <!-- PROJECT 1 -->
+      <div class="p-5 border rounded-xl dark:border-gray-700">
+        <h3 class="text-xl font-bold mb-2">
+          End-to-End Data Warehouse with SQL
+        </h3>
+        <p class="text-sm mb-2 text-gray-500">
+          SQL • Data Warehousing • ETL • Data Modeling
+        </p>
+
+        <p>
+          Designed and implemented a complete data warehouse solution using SQL, following modern data engineering practices.
+          The project includes data modeling, ETL processes, and analytical querying for decision support.
+        </p>
+
+        <ul class="list-disc ml-5 mt-2 text-sm">
+          <li>Designed relational schema and star schema for analytical queries</li>
+          <li>Implemented ETL pipeline (Extract, Transform, Load) to clean and structure data</li>
+          <li>Built fact and dimension tables for optimized querying</li>
+          <li>Executed complex SQL queries for business insights</li>
+        </ul>
+
+        <p class="mt-2 text-sm text-gray-600">
+          📌 Demonstrates full data pipeline from raw data to analytics-ready warehouse
+        </p>
+
+        <a href="https://github.com/elghalbouni-oumaima/End-to-End-Data-Warehouse-with-SQL" 
+          target="_blank" 
+          class="text-blue-600 text-sm font-semibold">
+          View on GitHub →
+        </a>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="p-5 border rounded-xl dark:border-gray-700">
+        <h3 class="text-xl font-bold mb-2">
+          FHV Trip Data Optimization with MongoDB
+        </h3>
+        <p class="text-sm mb-2 text-gray-500">
+          MongoDB • NoSQL • Query Optimization • Big Data
+        </p>
+
+        <p>
+          Optimized large-scale trip data queries using MongoDB, focusing on performance improvement and efficient data retrieval.
+          The project explores NoSQL data modeling and query optimization techniques.
+        </p>
+
+        <ul class="list-disc ml-5 mt-2 text-sm">
+          <li>Handled large FHV trip dataset using MongoDB collections</li>
+          <li>Optimized queries using indexing and aggregation pipelines</li>
+          <li>Improved query execution performance and response time</li>
+          <li>Analyzed transportation data for insights and trends</li>
+        </ul>
+
+        <p class="mt-2 text-sm text-gray-600">
+          📌 Focus on performance optimization and NoSQL data processing
+        </p>
+
+        <a href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization" 
+          target="_blank" 
+          class="text-blue-600 text-sm font-semibold">
+          View on GitHub →
+        </a>
+      </div>
+    </div>
+  </Fragment>
+</BlogLatestPosts>
 
   <!-- CTA -->
   <CallToAction
