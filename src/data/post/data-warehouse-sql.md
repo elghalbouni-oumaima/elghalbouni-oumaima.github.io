@@ -1,8 +1,9 @@
 ---
-publishDate: 2025-03-24T00:00:00Z
+
+publishDate: 2026-03-24T00:00:00Z
 title: End-to-End Data Warehouse with SQL & Analytics
 excerpt: Designed and implemented a complete data warehouse with ETL pipelines, Apache Airflow, and Power BI dashboards for actionable business insights.
-image:  /src/assets/image.png
+image:  https://pandorafms.com/blog/wp-content/uploads/2021/11/Data-Warehouse@72x-8.png
 category: Data Engineering
 tags:
   - SQL

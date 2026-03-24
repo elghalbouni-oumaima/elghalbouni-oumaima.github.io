@@ -2,7 +2,7 @@
 publishDate: 2025-03-24T00:00:00Z
 title: FHV Trip Data Optimization with MongoDB & Big Data
 excerpt: Optimized large-scale FHV trip datasets using MongoDB, Apache Spark, and Hadoop/HDFS to improve query performance and analytics capabilities.
-image: https://images.unsplash.com/photo-1616161611616-example2?auto=format&fit=crop&w=1651&q=80
+image: https://pandorafms.com/blog/wp-content/uploads/2021/11/Data-Warehouse@72x-8.png
 category: Big Data
 tags:
   - MongoDB
