@@ -15,8 +15,8 @@ export const headerData = {
       href: getPermalink('#projects'),
     },
     {
-      text: 'Blog',
-      href: getPermalink(),
+      text: 'Certifications',
+      href: getPermalink('#certifications'),
     },
     //   {
     //     text: 'Pages',
