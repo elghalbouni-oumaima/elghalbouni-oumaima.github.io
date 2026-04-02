@@ -14,7 +14,6 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- HERO -->
   <Hero
     actions={[
       {
@@ -42,13 +41,11 @@ const metadata = {
     </Fragment>
   </Hero>
 
-  <!-- NOTE -->
   <Note
     title="Mission:"
     description="Designing and developing data-driven systems that collect, process, analyze, and visualize data to support decision-making."
   />
 
-  <!-- FEATURES / SKILLS -->
   <Features
     id="skills"
     tagline="Technical Stack"
@@ -94,7 +91,6 @@ const metadata = {
     ]}
   />
 
-  <!-- ABOUT -->
   <Content
     id="about"
     isReversed
@@ -155,45 +151,13 @@ const metadata = {
     },
   ]}
 />
-  <!-- STEPS -->
-  <!-- <Steps
-    title="My Learning Journey"
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Strong Foundations</span>',
-        description:
-          "Learning programming, SQL, and data analysis fundamentals.",
-        icon: "tabler:school",
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Building Projects</span>',
-        description:
-          "Developing real-world applications combining Python, databases, and web technologies.",
-        icon: "tabler:code",
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Advanced Topics</span>',
-        description:
-          "Exploring machine learning, data engineering concepts, and data pipelines.",
-        icon: "tabler:database",
-      },
-      {
-        title: "Ready for Internship",
-        icon: "tabler:check",
-      },
-    ]}
-    image={{
-      src: "https://images.unsplash.com/photo-1616198814651-e71f960c3180?auto=format&fit=crop&w=987&q=80",
-      alt: "Growth",
-    }}
-  /> -->
-  <section id="timeline" class="py-16 bg-gray-50 dark:bg-gray-900">
+
+<section id="timeline" class="py-16 bg-gray-50 dark:bg-gray-900">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-10">Education</h2>
 
     <div class="relative border-l-2 border-blue-600 dark:border-blue-400 ml-4">
       
-      <!-- Timeline Item 1 -->
       <div class="mb-10 ml-6">
         <span class="absolute -left-4 top-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 dark:bg-blue-400 ring-4 ring-white dark:ring-gray-900">
           <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -207,7 +171,6 @@ const metadata = {
         </p>
       </div>
 
-      <!-- Timeline Item 2 -->
       <div class="mb-10 ml-6">
         <span class="absolute -left-4 top-0 flex items-center justify-center w-8 h-8 rounded-full bg-pink-600 dark:bg-pink-400 ring-4 ring-white dark:ring-gray-900">
           <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -225,7 +188,6 @@ const metadata = {
   </div>
 </section>
 
-  <!-- PROJECTS -->
   <section id="projects" class="py-16">
     <div class="max-w-6xl mx-auto px-4">
       
@@ -235,7 +197,6 @@ const metadata = {
       </p>
 
       <div class="grid md:grid-cols-2 gap-8">
-        <!-- PROJECT: TAASIM -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
           <img src="/images/taasim.png" alt="TaaSim Platform" class="w-full h-48 object-cover" />
 
@@ -258,7 +219,6 @@ const metadata = {
           </div>
         </div>
 
-        <!-- PROJECT: JOB PLATFORM -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
           <img src="/images/job-platform.jpg" alt="Job Platform" class="w-full h-48 object-cover" />
 
@@ -280,7 +240,6 @@ const metadata = {
             </a>
           </div>
         </div>
-        <!-- PROJECT 1 -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
           <img src="/images/data-warehouse.png" alt="Data Warehouse" class="w-full h-48 object-cover" />
 
@@ -302,7 +261,6 @@ const metadata = {
           </div>
         </div>
 
-        <!-- PROJECT 2 -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
           <img src="/images/mongodb.png" alt="MongoDB Project" class="w-full h-48 object-cover" />
 
@@ -324,7 +282,6 @@ const metadata = {
           </div>
         </div>
 
-        <!-- PROJECT 3 -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
           <img src="/images/medical.png" alt="Medical System" class="w-full h-48 object-cover" />
 
@@ -346,7 +303,6 @@ const metadata = {
           </div>
         </div>
 
-        <!-- PROJECT 4 -->
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
           <img src="/images/weather.png" alt="Weather App" class="w-full h-48 object-cover" />
 
@@ -372,74 +328,67 @@ const metadata = {
     </div>
   </section>
 
-  <!-- CERTIFICATIONS -->
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="py-16 bg-gray-50 dark:bg-gray-900">
-  <div class="max-w-6xl mx-auto px-4">
+  <section id="certifications" class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Achievements & Certifications</h2>
+      <p class="text-center text-gray-500 mb-10 max-w-2xl mx-auto">
+        My journey in Data Engineering is driven by continuous learning. Here is the full list of certifications I have earned.
+      </p>
 
-    <h2 class="text-3xl font-bold text-center mb-10">Achievements & Certifications</h2>
-
-    <p class="text-center text-gray-500 mb-10 max-w-2xl mx-auto">
-      My journey in Data Engineering is driven by continuous learning. Here are a few certifications that showcase my expertise in cloud, machine learning, and data visualization.
-    </p>
-
-    <div class="space-y-6">
-      
-      <!-- CERTIFICATE 1 -->
-      <div class="flex flex-col md:flex-row bg-purple-800 dark:bg-purple-700 rounded-xl overflow-hidden shadow-lg">
-        <div class="flex-1 p-6 text-white">
-          <h3 class="text-xl font-bold mb-2">Introduction to Docker</h3>
-          <p class="mb-4">
-            Gained hands-on experience in containerizing applications and managing images/containers for scalable deployments through DataCamp.
-          </p>
-          <div class="flex items-center justify-between">
-            <span class="font-semibold text-purple-200">DevOps • 2026</span>
-            <a href="/certificates/certificate-IntroDocker.pdf" target="_blank" class="bg-white text-purple-800 px-4 py-2 rounded-lg text-sm hover:bg-gray-200">
-              Download PDF
-            </a>
-          </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+          <h3 class="font-bold text-lg mb-1">Advanced SQL for Data Engineering</h3>
+          <p class="text-sm text-gray-500 mb-3">Mastering complex queries and data modeling.</p>
+          <a href="/certificates/Advanced SQL for Data Engineering.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">View Certificate →</a>
         </div>
-        <img src="/images/certificates/docker.png" alt="Docker Certificate" class="w-full md:w-48 object-cover"/>
-      </div>
 
-      <!-- CERTIFICATE 2 -->
-      <div class="flex flex-col md:flex-row bg-purple-800 dark:bg-purple-700 rounded-xl overflow-hidden shadow-lg">
-        <div class="flex-1 p-6 text-white">
-          <h3 class="text-xl font-bold mb-2">Supervised Learning with Scikit-Learn</h3>
-          <p class="mb-4">
-            Built and evaluated predictive models using regression and classification algorithms for data-driven insights on DataCamp.
-          </p>
-          <div class="flex items-center justify-between">
-            <span class="font-semibold text-purple-200">Machine Learning • 2025</span>
-            <a href="/certificates/certificate supervisedLearning.pdf" target="_blank" class="bg-white text-purple-800 px-4 py-2 rounded-lg text-sm hover:bg-gray-200">
-              Download PDF
-            </a>
-          </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+          <h3 class="font-bold text-lg mb-1">Supervised Learning with Scikit-Learn</h3>
+          <p class="text-sm text-gray-500 mb-3">Predictive modeling and classification algorithms.</p>
+          <a href="/certificates/certificate supervisedLearning.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">View Certificate →</a>
         </div>
-        <img src="/images/certificates/scikit-learn.png" alt="Scikit-Learn Certificate" class="w-full md:w-48 object-cover"/>
-      </div>
 
-      <!-- CERTIFICATE 3 -->
-      <div class="flex flex-col md:flex-row bg-purple-800 dark:bg-purple-700 rounded-xl overflow-hidden shadow-lg">
-        <div class="flex-1 p-6 text-white">
-          <h3 class="text-xl font-bold mb-2">Understanding Artificial Intelligence</h3>
-          <p class="mb-4">
-            Mastered foundational AI concepts, ethics, and practical applications in business and technology via DataCamp.
-          </p>
-          <div class="flex items-center justify-between">
-            <span class="font-semibold text-purple-200">AI • 2025</span>
-            <a href="/certificates/certificateUnderstanding of artificial intelligence.pdf" target="_blank" class="bg-white text-purple-800 px-4 py-2 rounded-lg text-sm hover:bg-gray-200">
-              Download PDF
-            </a>
-          </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+          <h3 class="font-bold text-lg mb-1">Introduction to Docker</h3>
+          <p class="text-sm text-gray-500 mb-3">Containerization fundamentals for applications.</p>
+          <a href="/certificates/certificate-IntroDocker.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">View Certificate →</a>
         </div>
-        <img src="/images/certificates/ai.png" alt="AI Certificate" class="w-full md:w-48 object-cover"/>
-      </div>
 
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+          <h3 class="font-bold text-lg mb-1">Introduction to Docker (Advanced)</h3>
+          <p class="text-sm text-gray-500 mb-3">Orchestration and image management.</p>
+          <a href="/certificates/certificate-Introduction to Docker.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">View Certificate →</a>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+          <h3 class="font-bold text-lg mb-1">Introduction to PySpark</h3>
+          <p class="text-sm text-gray-500 mb-3">Large-scale data processing with Python and Spark.</p>
+          <a href="/certificates/certificate-introPySpark.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">View Certificate →</a>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+          <h3 class="font-bold text-lg mb-1">Understanding Artificial Intelligence</h3>
+          <p class="text-sm text-gray-500 mb-3">Concepts, ethics, and logic of AI systems.</p>
+          <a href="/certificates/certificateUnderstanding of artificial intelligence.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">View Certificate →</a>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+          <h3 class="font-bold text-lg mb-1">Data Cleaning and Preprocessing with Pandas</h3>
+          <p class="text-sm text-gray-500 mb-3">Advanced data wrangling and preparation.</p>
+          <a href="/certificates/Data Cleaning and Preprocessing with pandas.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">View Certificate →</a>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+          <h3 class="font-bold text-lg mb-1">Oracle Cloud Infrastructure 2025</h3>
+          <p class="text-sm text-gray-500 mb-3">Foundations of OCI and cloud solutions.</p>
+          <a href="/certificates/Oracle Cloud Infrastructure 2025-certificat.pdf" target="_blank" class="text-blue-600 hover:underline text-sm font-medium">View Certificate →</a>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
-  <!-- CTA -->
+  </section>
+
   <CallToAction
     actions={[
       {
