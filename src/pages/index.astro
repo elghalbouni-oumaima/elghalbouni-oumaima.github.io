@@ -261,7 +261,7 @@ const metadata = {
           </div>
         </div>
 
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+        <!-- <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
           <img src="/images/mongodb.png" alt="MongoDB Project" class="w-full h-48 object-cover" />
 
           <div class="p-5">
@@ -280,7 +280,106 @@ const metadata = {
               View Project
             </a>
           </div>
+        </div> -->
+
+
+
+
+        <!-- PROJECT: MongoDB Optimization -->
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+
+          <img
+            src="/images/mongodb.png"
+            alt="MongoDB Project"
+            class="w-full h-48 object-cover"
+          />
+
+          <div class="p-5">
+
+            <h3 class="text-xl font-bold mb-2">
+              FHV Trip Data Optimization
+            </h3>
+
+            <p class="text-sm text-gray-500 mb-3">
+              MongoDB • Spark • Hadoop • Big Data
+            </p>
+
+            <p class="mb-4">
+              Optimized approximately 16 million FHV trip records using MongoDB
+              indexing and sharding, reducing query execution time from 61.8s to 7.8s.
+            </p>
+
+            <div class="flex gap-3">
+
+              <!-- WATCH DEMO -->
+              <button
+                onclick="document.getElementById('mongodb-video-modal').classList.remove('hidden')"
+                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition"
+              >
+                ▶ Watch Demo
+              </button>
+
+              <!-- GITHUB -->
+              <a
+                href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-lg text-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              >
+                GitHub ↗
+              </a>
+
+            </div>
+          </div>
         </div>
+
+
+        <!-- ============================= -->
+        <!-- VIDEO MODAL -->
+        <!-- ============================= -->
+
+        <div
+          id="mongodb-video-modal"
+          class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4"
+        >
+
+          <div
+            class="relative w-full max-w-4xl bg-black rounded-2xl overflow-hidden shadow-2xl"
+          >
+
+            <!-- CLOSE BUTTON -->
+            <button
+              onclick="document.getElementById('mongodb-video-modal').classList.add('hidden')"
+              class="absolute top-3 right-3 z-10 w-10 h-10 rounded-full bg-black/70 text-white text-xl hover:bg-gray-800 transition"
+              aria-label="Close video"
+            >
+              ✕
+            </button>
+
+            <!-- VIDEO -->
+            <video
+              class="w-full aspect-video"
+              controls
+              preload="metadata"
+            >
+              <source
+                src="/videos/mongodb-demo.wmv"
+                type="video/wmv"
+              />
+
+              Your browser does not support the video element.
+            </video>
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
 
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
           <img src="/images/medical.png" alt="Medical System" class="w-full h-48 object-cover" />
