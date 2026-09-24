@@ -50,15 +50,8 @@ const metadata = {
       <span class="font-semibold text-blue-600">
         Oumaima El Ghalbouni
       </span>
-      — Final-year Data Engineering student (BAC+5) passionate about
-      <span class="font-semibold">
-        Data Engineering, Data Science, and Artificial Intelligence
-      </span>.
-      I build solutions that collect, process, analyze, and transform data
-      into useful insights and intelligent applications using
-      <span class="font-semibold">
-        Python, SQL, Big Data technologies, Machine Learning, and RAG.
-      </span>
+      — Final-year Data Engineering student. I build pipelines, dashboards,
+      and ML/AI applications that turn raw data into decisions.
     </Fragment>
   </Hero>
 
@@ -69,7 +62,7 @@ const metadata = {
 
   <Note
     title="What I Build:"
-    description="Data pipelines, analytical platforms, machine learning applications, real-time data systems, dashboards, and AI-powered applications — from data ingestion and processing to visualization and intelligent decision support."
+    description="Data pipelines, analytical dashboards, machine learning applications, and AI-powered tools — from ingestion to visualization to decision support."
   />
 
 
@@ -81,55 +74,44 @@ const metadata = {
     id="skills"
     tagline="Technical Stack"
     title="Skills & Technologies"
-    subtitle="Technologies I have applied through academic projects, internships, and continuous learning."
+    subtitle="Technologies I've applied through academic projects and internships."
+    columns={3}
     items={[
       {
         title: "Data Engineering & Big Data",
         description:
-          "Building ETL/ELT pipelines, data processing workflows, data lakes, data warehouses, and distributed systems using Kafka, Spark, Flink, Hadoop, Airflow, MinIO, and related technologies.",
+          "ETL/ELT pipelines, data lakes and warehouses, and distributed systems with Kafka, Spark, Flink, Hadoop, and Airflow.",
         icon: "tabler:database-cog",
       },
       {
-        title: "Data Science & Machine Learning",
+        title: "Machine Learning & AI",
         description:
-          "Data preprocessing, feature engineering, model training and evaluation using Python, Pandas, NumPy, Scikit-learn, TensorFlow, and PyTorch.",
+          "Model training and evaluation with Scikit-learn, TensorFlow, and PyTorch, plus RAG, vector search, and LLM applications.",
         icon: "tabler:brain",
       },
       {
-        title: "Artificial Intelligence & RAG",
+        title: "Databases",
         description:
-          "Exploring NLP, Large Language Model applications, Retrieval-Augmented Generation, vector search, document question answering, and intelligent assistants.",
-        icon: "tabler:sparkles",
-      },
-      {
-        title: "Databases & Data Storage",
-        description:
-          "Working with PostgreSQL, MySQL, SQL Server, Oracle, MongoDB, Cassandra, Elasticsearch, and object storage such as MinIO.",
+          "PostgreSQL, MySQL, SQL Server, MongoDB, Cassandra, Elasticsearch, and object storage with MinIO.",
         icon: "tabler:database",
       },
       {
-        title: "Analytics & Business Intelligence",
+        title: "Analytics & BI",
         description:
-          "Creating analytical dashboards and KPIs using Power BI, DAX, Excel, Matplotlib, Dash, and Plotly.",
+          "Dashboards and KPIs with Power BI, DAX, Excel, and Python visualization libraries (Matplotlib, Plotly, Dash).",
         icon: "tabler:chart-bar",
       },
       {
         title: "APIs & Applications",
         description:
-          "Developing data-oriented applications and REST APIs using FastAPI, Flask, Streamlit, Spring Boot, PHP, JavaScript, HTML, and CSS.",
+          "REST APIs and data apps with FastAPI, Flask, Streamlit, and web development with PHP/JavaScript.",
         icon: "tabler:api",
       },
       {
-        title: "Cloud, DevOps & Tools",
+        title: "Cloud & DevOps",
         description:
-          "Using Docker, Git, GitHub, Linux, and Oracle Cloud concepts to develop and manage reproducible data applications.",
+          "Docker, Git/GitHub, Linux, and Oracle Cloud Infrastructure for reproducible data applications.",
         icon: "tabler:brand-docker",
-      },
-      {
-        title: "Programming",
-        description:
-          "Python, SQL, Java, C, PHP, HTML, CSS, and JavaScript, with Python and SQL as my main tools for data-related work.",
-        icon: "tabler:code",
       },
     ]}
   />
@@ -148,17 +130,17 @@ const metadata = {
       {
         title: "Engineering Student",
         description:
-          "Currently completing my final year of the Data Engineering engineering cycle at ENSA Al Hoceima, with coursework and projects covering Big Data, distributed systems, databases, AI, machine learning, and business intelligence.",
+          "Final-year Data Engineering student at ENSA Al Hoceima — Big Data, distributed systems, AI, and Business Intelligence.",
       },
       {
         title: "Hands-On Experience",
         description:
-          "My internships and projects allowed me to work on data pipelines, Power BI dashboards, machine learning systems, cybersecurity analytics, real-time data processing, and AI-powered applications.",
+          "Internships spanning data pipelines, Power BI dashboards, ML systems, and cybersecurity analytics.",
       },
       {
-        title: "Continuous Learning",
+        title: "Currently Learning",
         description:
-          "Currently deepening my knowledge of Retrieval-Augmented Generation and Agentic AI while continuing to strengthen my Data Engineering and Machine Learning skills.",
+          "Deepening my skills in Retrieval-Augmented Generation and Agentic AI.",
       },
     ]}
     image={{
@@ -167,15 +149,11 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3
-        class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"
-      >
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Building Complete Data Solutions
       </h3>
-
-      I enjoy working across the complete data lifecycle — from data
-      collection and ingestion to storage, processing, analysis,
-      visualization, machine learning, and intelligent applications.
+      I work across the full data lifecycle — from ingestion and storage
+      to processing, visualization, and intelligent applications.
     </Fragment>
 
     <Fragment slot="bg">
@@ -185,125 +163,68 @@ const metadata = {
 
 
   <!-- ===================================================== -->
-  <!-- EXPERIENCE -->
+  <!-- EXPERIENCE (single source of truth — no duplication) -->
   <!-- ===================================================== -->
 
-  <Features
-    id="experience"
-    tagline="Professional Experience"
-    title="Internships & Industry Experience"
-    subtitle="Selected professional experiences where I applied data, analytics, AI, and software technologies to real-world problems."
-    items={[
-      {
-        title: "AI & Data Scientist Intern — CMRPI",
-        description:
-          "Developed an end-to-end phishing URL detection pipeline using machine learning and Elasticsearch. Benchmarked four ML models with 5-fold cross-validation, achieving over 90% precision and recall, and built a 5-page Streamlit monitoring dashboard with automated email alerts.",
-        icon: "tabler:shield-check",
-      },
-      {
-        title: "Data Analyst Intern — Terra Nova EBS",
-        description:
-          "Designed four-page Power BI dashboards for the Procurement Department, developed DAX measures and calculated columns, and cleaned and transformed business datasets using Excel and Power BI.",
-        icon: "tabler:chart-dots",
-      },
-      {
-        title: "Web Development Intern — Provincial Hospital Center Med VI",
-        description:
-          "Designed and implemented administrative and employee modules for a web application supporting the digitalization of radiology department operations.",
-        icon: "tabler:building-hospital",
-      },
-    ]}
-  />
+  <section id="experience" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
 
-
-  <!-- ===================================================== -->
-  <!-- EXPERIENCE DETAILS -->
-  <!-- ===================================================== -->
-
-  <section class="py-10">
-    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <p class="text-blue-600 font-semibold uppercase tracking-wide">
+          Professional Experience
+        </p>
+        <h2 class="text-4xl font-bold mt-2 dark:text-white">
+          Internships & Industry Experience
+        </h2>
+      </div>
 
       <div class="grid md:grid-cols-3 gap-6">
 
         <div class="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-md">
           <div class="flex items-center gap-3 mb-3">
             <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30">
-              <span class="text-blue-600" aria-hidden="true">
-                <iconify-icon icon="tabler:shield-check" />
-              </span>
+              <iconify-icon icon="tabler:shield-check" class="text-blue-600" />
             </div>
-            <span class="text-sm text-blue-600 font-semibold">
-              07/2026 – 08/2026
-            </span>
+            <span class="text-sm text-blue-600 font-semibold">07/2026 – 08/2026</span>
           </div>
-
-          <h3 class="font-bold text-lg dark:text-white">
-            AI & Data Scientist Intern
-          </h3>
-
+          <h3 class="font-bold text-lg dark:text-white">AI & Data Scientist Intern</h3>
           <p class="text-sm text-gray-500 mt-1">
             Moroccan Center for Polytechnic Research and Innovation
           </p>
-
           <p class="text-sm text-gray-600 dark:text-gray-300 mt-3">
-            Phishing detection, machine learning, Elasticsearch,
-            Streamlit monitoring, threat intelligence and automated alerts.
+            Built an end-to-end phishing detection pipeline: benchmarked 4 ML
+            models (5-fold CV, 90%+ precision/recall) with Elasticsearch and a
+            5-page Streamlit monitoring dashboard with automated alerts.
           </p>
         </div>
-
 
         <div class="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-md">
           <div class="flex items-center gap-3 mb-3">
             <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30">
-              <span class="text-blue-600" aria-hidden="true">
-                <iconify-icon icon="tabler:chart-bar" />
-              </span>
+              <iconify-icon icon="tabler:chart-bar" class="text-blue-600" />
             </div>
-
-            <span class="text-sm text-blue-600 font-semibold">
-              07/2025 – 08/2025
-            </span>
+            <span class="text-sm text-blue-600 font-semibold">07/2025 – 08/2025</span>
           </div>
-
-          <h3 class="font-bold text-lg dark:text-white">
-            Data Analyst Intern
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-1">
-            Terra Nova EBS
-          </p>
-
+          <h3 class="font-bold text-lg dark:text-white">Data Analyst Intern</h3>
+          <p class="text-sm text-gray-500 mt-1">Terra Nova EBS</p>
           <p class="text-sm text-gray-600 dark:text-gray-300 mt-3">
-            Power BI dashboards, DAX, Excel, data cleaning,
-            transformation and procurement analytics.
+            Designed 4-page Power BI dashboards for Procurement, built DAX
+            measures, and cleaned/transformed business datasets.
           </p>
         </div>
-
 
         <div class="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-md">
           <div class="flex items-center gap-3 mb-3">
             <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30">
-              <span class="text-blue-600" aria-hidden="true">
-                <iconify-icon icon="tabler:building-hospital" />
-              </span>
+              <iconify-icon icon="tabler:building-hospital" class="text-blue-600" />
             </div>
-
-            <span class="text-sm text-blue-600 font-semibold">
-              06/2025 – 09/2025
-            </span>
+            <span class="text-sm text-blue-600 font-semibold">06/2025 – 09/2025</span>
           </div>
-
-          <h3 class="font-bold text-lg dark:text-white">
-            Web Development Intern
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-1">
-            Provincial Hospital Center Med VI
-          </p>
-
+          <h3 class="font-bold text-lg dark:text-white">Web Development Intern</h3>
+          <p class="text-sm text-gray-500 mt-1">Provincial Hospital Center Med VI</p>
           <p class="text-sm text-gray-600 dark:text-gray-300 mt-3">
-            Radiology management application using PHP, MySQL,
-            JavaScript, HTML and CSS.
+            Built admin and employee modules (PHP, MySQL, JavaScript) to
+            digitalize the radiology department's operations.
           </p>
         </div>
 
@@ -317,114 +238,51 @@ const metadata = {
   <!-- ===================================================== -->
 
   <section id="education" class="py-16 bg-gray-50 dark:bg-gray-900">
-
     <div class="max-w-6xl mx-auto px-4">
 
-      <h2 class="text-3xl font-bold text-center mb-3 dark:text-white">
-        Education
-      </h2>
-
+      <h2 class="text-3xl font-bold text-center mb-3 dark:text-white">Education</h2>
       <p class="text-center text-gray-500 mb-12">
         My academic path in engineering, data, and computer science.
       </p>
 
-
       <div class="relative border-l-2 border-blue-600 dark:border-blue-400 ml-4">
 
-
-        <!-- Engineering -->
         <div class="mb-12 ml-8 relative">
-
-          <span
-            class="absolute -left-[46px] top-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 ring-4 ring-gray-50 dark:ring-gray-900"
-          >
-            <iconify-icon
-              icon="tabler:school"
-              class="text-white"
-            />
+          <span class="absolute -left-[46px] top-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 ring-4 ring-gray-50 dark:ring-gray-900">
+            <iconify-icon icon="tabler:school" class="text-white" />
           </span>
-
-          <span class="text-sm text-blue-600 font-semibold">
-            2024 – Present
-          </span>
-
-          <h3 class="text-xl font-bold mt-1 dark:text-white">
-            Engineering Degree — Data Engineering
-          </h3>
-
+          <span class="text-sm text-blue-600 font-semibold">2024 – Present</span>
+          <h3 class="text-xl font-bold mt-1 dark:text-white">Engineering Degree — Data Engineering</h3>
           <p class="font-medium text-gray-600 dark:text-gray-300">
             École Nationale des Sciences Appliquées d'Al-Hoceima (ENSAH)
           </p>
-
           <p class="text-gray-500 dark:text-gray-400 mt-2">
-            Final-year engineering cycle focused on Data Engineering,
-            Big Data, distributed systems, Artificial Intelligence,
-            Machine Learning, databases, and Business Intelligence.
+            Final-year cycle: Data Engineering, Big Data, distributed systems,
+            AI, Machine Learning, databases, and BI.
           </p>
-
         </div>
 
-
-        <!-- Preparatory Cycle -->
         <div class="mb-12 ml-8 relative">
-
-          <span
-            class="absolute -left-[46px] top-0 flex items-center justify-center w-8 h-8 rounded-full bg-purple-600 ring-4 ring-gray-50 dark:ring-gray-900"
-          >
-            <iconify-icon
-              icon="tabler:books"
-              class="text-white"
-            />
+          <span class="absolute -left-[46px] top-0 flex items-center justify-center w-8 h-8 rounded-full bg-purple-600 ring-4 ring-gray-50 dark:ring-gray-900">
+            <iconify-icon icon="tabler:books" class="text-white" />
           </span>
-
-          <span class="text-sm text-purple-600 font-semibold">
-            2022 – 2024
-          </span>
-
-          <h3 class="text-xl font-bold mt-1 dark:text-white">
-            Preparatory Cycle
-          </h3>
-
+          <span class="text-sm text-purple-600 font-semibold">2022 – 2024</span>
+          <h3 class="text-xl font-bold mt-1 dark:text-white">Preparatory Cycle</h3>
           <p class="font-medium text-gray-600 dark:text-gray-300">
             École Nationale des Sciences Appliquées d'Al-Hoceima
           </p>
-
           <p class="text-gray-500 dark:text-gray-400 mt-2">
-            Scientific and technical foundation in mathematics,
-            programming, algorithms, computer science, and engineering.
+            Foundations in mathematics, programming, algorithms, and engineering.
           </p>
-
         </div>
 
-
-        <!-- Bac -->
         <div class="ml-8 relative">
-
-          <span
-            class="absolute -left-[46px] top-0 flex items-center justify-center w-8 h-8 rounded-full bg-pink-600 ring-4 ring-gray-50 dark:ring-gray-900"
-          >
-            <iconify-icon
-              icon="tabler:certificate"
-              class="text-white"
-            />
+          <span class="absolute -left-[46px] top-0 flex items-center justify-center w-8 h-8 rounded-full bg-pink-600 ring-4 ring-gray-50 dark:ring-gray-900">
+            <iconify-icon icon="tabler:certificate" class="text-white" />
           </span>
-
-          <span class="text-sm text-pink-600 font-semibold">
-            2022
-          </span>
-
-          <h3 class="text-xl font-bold mt-1 dark:text-white">
-            Baccalaureate — Physics & Chemistry
-          </h3>
-
-          <p class="font-medium text-gray-600 dark:text-gray-300">
-            Lycée Rif, Ajdir
-          </p>
-
-          <p class="text-gray-500 dark:text-gray-400 mt-2">
-            French option.
-          </p>
-
+          <span class="text-sm text-pink-600 font-semibold">2022</span>
+          <h3 class="text-xl font-bold mt-1 dark:text-white">Baccalaureate — Physics & Chemistry</h3>
+          <p class="font-medium text-gray-600 dark:text-gray-300">Lycée Rif, Ajdir (French option)</p>
         </div>
 
       </div>
@@ -433,528 +291,170 @@ const metadata = {
 
 
   <!-- ===================================================== -->
-  <!-- PROJECTS -->
+  <!-- PROJECTS — Featured (rich) + More (compact) -->
   <!-- ===================================================== -->
 
   <section id="projects" class="py-20">
-
     <div class="max-w-6xl mx-auto px-4">
 
       <div class="text-center mb-12">
-
-        <p class="text-blue-600 font-semibold uppercase tracking-wide">
-          Portfolio
-        </p>
-
-        <h2 class="text-4xl md:text-5xl font-bold mt-2 dark:text-white">
-          Projects
-        </h2>
-
+        <p class="text-blue-600 font-semibold uppercase tracking-wide">Portfolio</p>
+        <h2 class="text-4xl md:text-5xl font-bold mt-2 dark:text-white">Featured Projects</h2>
         <p class="text-gray-500 max-w-3xl mx-auto mt-4">
-          A collection of academic, internship, and personal projects
-          covering Data Engineering, Big Data, Machine Learning,
-          Artificial Intelligence, analytics, databases, and application
-          development.
+          My strongest work in Data Engineering, Big Data, and Machine Learning.
         </p>
+      </div>
+
+      <!-- Featured: pick your 3 strongest, most complete projects -->
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+          <img src="/images/taasim.png" alt="TaaSim Urban Mobility Platform" class="w-full h-44 object-cover" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold dark:text-white">TaaSim — Real-Time Urban Mobility</h3>
+            <p class="text-sm text-blue-600 mt-2">Kafka • Flink • Spark • Cassandra</p>
+            <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
+              Kappa-architecture platform for real-time mobility data: Kafka
+              ingestion, Flink streaming, and ML demand forecasting.
+            </p>
+            <a href="https://github.com/elghalbouni-oumaima/taasim-urban-mobility-platform" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+          <img src="/images/data-warehouse.png" alt="End-to-End Data Warehouse" class="w-full h-44 object-cover" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold dark:text-white">Data Warehouse & Churn Analytics</h3>
+            <p class="text-sm text-blue-600 mt-2">SQL Server • Airflow • FastAPI</p>
+            <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
+              Bronze/Silver/Gold warehouse with 19 data-quality checks and a
+              churn model at 97% recall, served via FastAPI + Power BI.
+            </p>
+            <a href="https://github.com/elghalbouni-oumaima/end-to-end-data-warehouse-with-sql" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+          <img src="/images/phishing.png" alt="Phishing Early Warning System" class="w-full h-44 object-cover" />
+          <div class="p-6">
+            <div class="flex justify-between items-start gap-2">
+              <h3 class="text-lg font-bold dark:text-white">Phishing Early Warning System</h3>
+              <span class="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700 shrink-0">PFA</span>
+            </div>
+            <p class="text-sm text-blue-600 mt-2">XGBoost • Streamlit</p>
+            <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
+              ML pipeline on 188K samples with a monitoring dashboard and
+              automated email alerts for SME threat protection.
+            </p>
+            <a href="https://github.com/elghalbouni-oumaima" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+              GitHub ↗
+            </a>
+          </div>
+        </div>
 
       </div>
 
+      <!-- More Projects: compact list, no dead-end cards -->
+      <h3 class="text-2xl font-bold text-center mt-20 mb-8 dark:text-white">More Projects</h3>
 
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 gap-4">
 
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
+          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+            <iconify-icon icon="tabler:message-2" class="text-blue-600" />
+          </div>
+          <div>
+            <h4 class="font-semibold dark:text-white">AI Meeting Assistant</h4>
+            <p class="text-sm text-gray-500 mt-1">RAG + FAISS meeting summarizer, action items, and Q&A over transcripts.</p>
+            <a href="https://github.com/elghalbouni-oumaima/meeting-assistant" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
+          </div>
+        </div>
 
-        <!-- ================================================= -->
-        <!-- PHISHING -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/phishing.png"
-            alt="Phishing Early Warning System"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <div class="flex justify-between items-start gap-3">
-
-              <h3 class="text-xl font-bold dark:text-white">
-                Phishing Early Warning System
-              </h3>
-
-              <span class="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700">
-                PFA
-              </span>
-
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
+          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+            <iconify-icon icon="tabler:database" class="text-blue-600" />
+          </div>
+          <div>
+            <h4 class="font-semibold dark:text-white">FHV Trip Data Optimization</h4>
+            <p class="text-sm text-gray-500 mt-1">MongoDB indexing/sharding on 16M records: 61.8s → 7.8s query time.</p>
+            <div class="flex gap-3 mt-1">
+              <button onclick="document.getElementById('mongodb-video-modal').classList.remove('hidden')" class="text-sm text-blue-600 hover:underline">▶ Watch Demo</button>
+              <a href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline">GitHub ↗</a>
             </div>
-
-            <p class="text-sm text-blue-600 mt-2">
-              Python • XGBoost • Machine Learning • Streamlit
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Built an early warning system for phishing threats targeting
-              SMEs. Developed a machine learning pipeline using
-              188,296 samples and integrated threat analysis with a
-              monitoring interface and email notifications.
-            </p>
-
-            <div class="flex gap-3 mt-5">
-
-              <a
-                href="https://github.com/elghalbouni-oumaima"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
-              >
-                GitHub ↗
-              </a>
-
-            </div>
-
           </div>
         </div>
 
-
-        <!-- ================================================= -->
-        <!-- MEETING ASSISTANT -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/meeting-assistant.png"
-            alt="AI Meeting Assistant"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              AI Meeting Assistant
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              NLP • RAG • FAISS • HuggingFace • Streamlit
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Developed an intelligent application for analyzing meeting
-              transcripts, generating summaries and action plans,
-              performing sentiment analysis by speaker, and answering
-              questions over meeting documents using RAG and FAISS.
-            </p>
-
-            <div class="flex gap-3 mt-5">
-
-              <a
-                href="https://github.com/elghalbouni-oumaima/meeting-assistant"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
-              >
-                GitHub ↗
-              </a>
-
-            </div>
-
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
+          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+            <iconify-icon icon="tabler:briefcase" class="text-blue-600" />
+          </div>
+          <div>
+            <h4 class="font-semibold dark:text-white">JobIntelligent — Job Data Platform</h4>
+            <p class="text-sm text-gray-500 mt-1">Multi-API aggregation, MinIO + PostgreSQL storage, Power BI dashboards.</p>
+            <a href="https://github.com/firdawss-Elhaddouchi/JobIntelligent-Data-Platform" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
           </div>
         </div>
 
-
-        <!-- ================================================= -->
-        <!-- TAASIM -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/taasim.png"
-            alt="TaaSim Casablanca Urban Mobility Platform"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              TaaSim — Real-Time Urban Mobility Platform
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              Kafka • Flink • Spark • Cassandra • FastAPI • Docker
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Designed a Kappa Architecture for real-time urban mobility
-              data. Implemented Kafka-based ingestion, Apache Flink
-              streaming pipelines, Spark ETL processing, Cassandra
-              storage, and machine learning for transportation demand
-              forecasting.
-            </p>
-
-            <div class="flex gap-3 mt-5">
-
-              <a
-                href="https://github.com/elghalbouni-oumaima/taasim-urban-mobility-platform"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
-              >
-                GitHub ↗
-              </a>
-
-            </div>
-
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
+          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+            <iconify-icon icon="tabler:hand-stop" class="text-blue-600" />
+          </div>
+          <div>
+            <h4 class="font-semibold dark:text-white">Sign Language Translation</h4>
+            <p class="text-sm text-gray-500 mt-1">Deep learning on Phoenix-2014T: 399 keypoints, sequence-based recognition.</p>
+            <a href="https://github.com/amina-dourdi/sign-language-translation" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
           </div>
         </div>
 
-
-        <!-- ================================================= -->
-        <!-- DATA WAREHOUSE -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/data-warehouse.png"
-            alt="End-to-End Data Warehouse"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              End-to-End Data Warehouse & Churn Analytics
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              SQL Server • Airflow • Python • Power BI • FastAPI
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Designed a Bronze/Silver/Gold data warehouse with a
-              dimensional star schema and 19 data-quality checks.
-              Built a leakage-free churn prediction pipeline achieving
-              97% recall and 0.98 ROC-AUC, then exposed the model through
-              FastAPI and Streamlit alongside a Power BI dashboard.
-            </p>
-
-            <div class="flex gap-3 mt-5">
-
-              <a
-                href="https://github.com/elghalbouni-oumaima/end-to-end-data-warehouse-with-sql"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
-              >
-                GitHub ↗
-              </a>
-
-            </div>
-
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
+          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+            <iconify-icon icon="tabler:stethoscope" class="text-blue-600" />
+          </div>
+          <div>
+            <h4 class="font-semibold dark:text-white">Medical Data Management System</h4>
+            <p class="text-sm text-gray-500 mt-1">Patient data management and statistical insights (Python, MySQL, PHP).</p>
+            <a href="https://github.com/elghalbouni-oumaima/disease-management-system" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
           </div>
         </div>
 
-
-        <!-- ================================================= -->
-        <!-- MONGODB -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/mongodb.png"
-            alt="MongoDB FHV Trip Data Optimization"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              FHV Trip Data Optimization
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              MongoDB • Indexing • Sharding • Big Data
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Optimized approximately 16 million FHV trip records using
-              MongoDB indexing and sharding, reducing query execution
-              time from 61.8 seconds to 7.8 seconds.
-            </p>
-
-            <div class="flex gap-3 mt-5">
-
-              <button
-                onclick="document.getElementById('mongodb-video-modal').classList.remove('hidden')"
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition"
-              >
-                ▶ Watch Demo
-              </button>
-
-              <a
-                href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-lg text-sm hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-              >
-                GitHub ↗
-              </a>
-
-            </div>
-
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
+          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+            <iconify-icon icon="tabler:cloud-rain" class="text-blue-600" />
+          </div>
+          <div>
+            <h4 class="font-semibold dark:text-white">Weather Application</h4>
+            <p class="text-sm text-gray-500 mt-1">Desktop app (PyQt5) with live weather data and city search.</p>
+            <a href="https://github.com/elghalbouni-oumaima/Weather-Application" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
           </div>
         </div>
 
-
-        <!-- ================================================= -->
-        <!-- JOBINTELLIGENT -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/job-platform.jpg"
-            alt="JobIntelligent Data Platform"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              JobIntelligent — Job Data Platform
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              APIs • MinIO • PostgreSQL • FastAPI • Power BI
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Built a data platform aggregating job offers from multiple
-              APIs. Implemented bronze/silver storage with MinIO,
-              PostgreSQL analytical storage, FastAPI services, scheduled
-              batch processing, and Power BI dashboards.
-            </p>
-
-            <div class="flex gap-3 mt-5">
-
-              <a
-                href="https://github.com/firdawss-Elhaddouchi/JobIntelligent-Data-Platform"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
-              >
-                GitHub ↗
-              </a>
-
-            </div>
-
+        <!-- No public link yet — labeled honestly instead of a dead-end card -->
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm opacity-80">
+          <div class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 shrink-0">
+            <iconify-icon icon="tabler:server-2" class="text-gray-500" />
+          </div>
+          <div>
+            <h4 class="font-semibold dark:text-white">Procurement Data Pipeline</h4>
+            <p class="text-sm text-gray-500 mt-1">Batch pipeline with HDFS, Hive, Trino, and Parquet — private repo.</p>
           </div>
         </div>
 
-
-        <!-- ================================================= -->
-        <!-- SIGN LANGUAGE -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/sign-language.png"
-            alt="Sign Language Translation"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              Sign Language Translation
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              Deep Learning • Computer Vision • PyTorch
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Developed a deep learning project for sign language
-              translation using the MSKA / Phoenix-2014T dataset.
-              Extracted 399 keypoints and trained a sequence-based
-              model for continuous sign language recognition.
-            </p>
-
-            <div class="flex gap-3 mt-5">
-
-              <a
-                href="https://github.com/amina-dourdi/sign-language-translation"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
-              >
-                GitHub ↗
-              </a>
-
-            </div>
-
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm opacity-80">
+          <div class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 shrink-0">
+            <iconify-icon icon="tabler:tags" class="text-gray-500" />
+          </div>
+          <div>
+            <h4 class="font-semibold dark:text-white">NLP Annotation Platform</h4>
+            <p class="text-sm text-gray-500 mt-1">Spring Boot annotation workflow tool with role-based access — private repo.</p>
           </div>
         </div>
-
-
-        <!-- ================================================= -->
-        <!-- PROCUREMENT PIPELINE -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/procurement-pipeline.png"
-            alt="Procurement Data Pipeline"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              Procurement Data Pipeline
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              HDFS • Hive • Trino • PostgreSQL • Avro • Parquet
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Built a batch-oriented data pipeline for procurement
-              analytics using HDFS, Hive Metastore, Trino/Presto,
-              PostgreSQL, and columnar data formats. Implemented
-              data-quality exception handling and date-based reruns.
-            </p>
-
-          </div>
-        </div>
-
-
-        <!-- ================================================= -->
-        <!-- NLP ANNOTATION -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/annotation.png"
-            alt="NLP Annotation Platform"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              NLP Annotation Platform
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              Spring Boot • Thymeleaf • MariaDB • NLP
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Developed a web platform for managing NLP annotation
-              workflows with role-based access for annotators,
-              document management, and human validation interfaces.
-            </p>
-
-          </div>
-        </div>
-
-
-        <!-- ================================================= -->
-        <!-- MEDICAL -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/medical.png"
-            alt="Medical Data Management System"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              Medical Data Management System
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              Python • MySQL • PHP • Data Analysis
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Developed a system for managing medical data and
-              generating statistical insights through a combination
-              of Python and web technologies.
-            </p>
-
-            <div class="flex gap-3 mt-5">
-
-              <a
-                href="https://github.com/elghalbouni-oumaima/disease-management-system"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
-              >
-                GitHub ↗
-              </a>
-
-            </div>
-
-          </div>
-        </div>
-
-
-        <!-- ================================================= -->
-        <!-- WEATHER -->
-        <!-- ================================================= -->
-
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-
-          <img
-            src="/images/weather.png"
-            alt="Weather Application"
-            class="w-full h-48 object-cover"
-          />
-
-          <div class="p-6">
-
-            <h3 class="text-xl font-bold dark:text-white">
-              Weather Application
-            </h3>
-
-            <p class="text-sm text-blue-600 mt-2">
-              Python • PyQt5 • REST API
-            </p>
-
-            <p class="text-gray-600 dark:text-gray-300 mt-4">
-              Developed a desktop weather application using PyQt5
-              and a weather API to display real-time weather
-              information with city search and dynamic icons.
-            </p>
-
-            <div class="flex gap-3 mt-5">
-
-              <a
-                href="https://github.com/elghalbouni-oumaima/Weather-Application"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
-              >
-                GitHub ↗
-              </a>
-
-            </div>
-
-          </div>
-        </div>
-
 
       </div>
     </div>
@@ -965,15 +465,8 @@ const metadata = {
   <!-- MONGODB VIDEO MODAL -->
   <!-- ===================================================== -->
 
-  <div
-    id="mongodb-video-modal"
-    class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4"
-  >
-
-    <div
-      class="relative w-full max-w-4xl bg-black rounded-2xl overflow-hidden shadow-2xl"
-    >
-
+  <div id="mongodb-video-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4">
+    <div class="relative w-full max-w-4xl bg-black rounded-2xl overflow-hidden shadow-2xl">
       <button
         onclick="document.getElementById('mongodb-video-modal').classList.add('hidden')"
         class="absolute top-3 right-3 z-10 w-10 h-10 rounded-full bg-black/70 text-white text-xl hover:bg-gray-800 transition"
@@ -981,448 +474,67 @@ const metadata = {
       >
         ✕
       </button>
-
-      <video
-        class="w-full aspect-video"
-        controls
-        preload="metadata"
-      >
-        <source
-          src="/videos/mongodb-demo.mp4"
-          type="video/mp4"
-        />
-
+      <video class="w-full aspect-video" controls preload="metadata">
+        <source src="/videos/mongodb-demo.mp4" type="video/mp4" />
         Your browser does not support the video element.
       </video>
-
     </div>
   </div>
 
 
   <!-- ===================================================== -->
-  <!-- CERTIFICATIONS -->
+  <!-- CERTIFICATIONS — compact list, not oversized cards -->
   <!-- ===================================================== -->
 
-  <section
-    id="certifications"
-    class="py-20 bg-gray-50 dark:bg-gray-900"
-  >
-
-    <div class="max-w-6xl mx-auto px-4">
+  <section id="certifications" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4">
 
       <div class="text-center mb-12">
-
-        <p class="text-blue-600 font-semibold uppercase tracking-wide">
-          Continuous Learning
-        </p>
-
-        <h2 class="text-4xl font-bold mt-2 dark:text-white">
-          Certifications & Courses
-        </h2>
-
-        <p class="text-gray-500 max-w-2xl mx-auto mt-4">
-          Certifications and specialized courses that complement my
-          engineering studies and practical project experience.
-        </p>
-
+        <p class="text-blue-600 font-semibold uppercase tracking-wide">Continuous Learning</p>
+        <h2 class="text-4xl font-bold mt-2 dark:text-white">Certifications & Courses</h2>
       </div>
 
+      <div class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden">
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-
-        <!-- 365 DATA SCIENCE -->
-
-        <div
-          class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md
-                 border border-gray-100 dark:border-gray-700
-                 hover:-translate-y-1 transition"
-        >
-
-          <div class="flex items-start justify-between">
-
-            <div
-              class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30
-                     flex items-center justify-center"
-            >
-              <iconify-icon
-                icon="tabler:database"
-                class="text-2xl text-blue-600"
-              />
-            </div>
-
-            <span
-              class="text-xs font-semibold px-3 py-1 rounded-full
-                     bg-blue-50 text-blue-600"
-            >
-              365 Data Science
-            </span>
-
-          </div>
-
-          <h3 class="font-bold text-lg mt-5 dark:text-white">
-            Advanced SQL for Data Engineering
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Advanced SQL queries, data manipulation, and
-            data-engineering-oriented database skills.
-          </p>
-
+        {[
+          { title: "Advanced SQL for Data Engineering", issuer: "365 Data Science", icon: "tabler:database", file: "Advanced SQL for Data Engineering.pdf" },
+          { title: "Supervised Learning with Scikit-learn", issuer: "DataCamp", icon: "tabler:brain", file: "certificate supervisedLearning.pdf" },
+          { title: "Introduction to Docker", issuer: "DataCamp", icon: "tabler:brand-docker", file: "certificate-Introduction to Docker.pdf" },
+          { title: "Introduction to PySpark", issuer: "DataCamp", icon: "tabler:brand-python", file: "certificate-introPySpark.pdf" },
+          { title: "Understanding Artificial Intelligence", issuer: "AI Course", icon: "tabler:sparkles", file: "certificateUnderstanding of artificial intelligence.pdf" },
+          { title: "Data Cleaning & Preprocessing with Pandas", issuer: "DataCamp", icon: "tabler:table", file: "Data Cleaning and Preprocessing with pandas.pdf" },
+          { title: "Oracle Cloud Infrastructure 2025", issuer: "Oracle", icon: "tabler:cloud", file: "Oracle Cloud Infrastructure 2025-certificate.pdf" },
+        ].map((cert) => (
           <a
-            href="/certificates/Advanced SQL for Data Engineering.pdf"
+            href={`/certificates/${cert.file}`}
             target="_blank"
-            class="inline-flex items-center gap-2 mt-5 text-blue-600 hover:underline text-sm font-medium"
+            class="flex items-center justify-between gap-4 px-6 py-4 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition"
           >
-            View Certificate →
-          </a>
-
-        </div>
-
-
-        <!-- DATACAMP SCikit -->
-
-        <div
-          class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md
-                 border border-gray-100 dark:border-gray-700
-                 hover:-translate-y-1 transition"
-        >
-
-          <div class="flex items-start justify-between">
-
-            <div
-              class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30
-                     flex items-center justify-center"
-            >
-              <iconify-icon
-                icon="tabler:brain"
-                class="text-2xl text-green-600"
-              />
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center shrink-0">
+                <iconify-icon icon={cert.icon} class="text-blue-600" />
+              </div>
+              <div>
+                <p class="font-semibold dark:text-white">{cert.title}</p>
+                <p class="text-sm text-gray-500">{cert.issuer}</p>
+              </div>
             </div>
-
-            <span
-              class="text-xs font-semibold px-3 py-1 rounded-full
-                     bg-green-50 text-green-600"
-            >
-              DataCamp
-            </span>
-
-          </div>
-
-          <h3 class="font-bold text-lg mt-5 dark:text-white">
-            Supervised Learning with Scikit-learn
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Supervised machine learning, classification,
-            predictive modeling, and model evaluation.
-          </p>
-
-          <a
-            href="/certificates/certificate supervisedLearning.pdf"
-            target="_blank"
-            class="inline-flex items-center gap-2 mt-5 text-blue-600 hover:underline text-sm font-medium"
-          >
-            View Certificate →
+            <span class="text-blue-600 text-sm font-medium shrink-0">View →</span>
           </a>
+        ))}
 
-        </div>
-
-
-        <!-- DATACAMP DOCKER -->
-
-        <div
-          class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md
-                 border border-gray-100 dark:border-gray-700
-                 hover:-translate-y-1 transition"
-        >
-
-          <div class="flex items-start justify-between">
-
-            <div
-              class="w-12 h-12 rounded-xl bg-cyan-100 dark:bg-cyan-900/30
-                     flex items-center justify-center"
-            >
-              <iconify-icon
-                icon="tabler:brand-docker"
-                class="text-2xl text-cyan-600"
-              />
+        <div class="flex items-center justify-between gap-4 px-6 py-4">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center shrink-0">
+              <iconify-icon icon="tabler:robot" class="text-blue-600" />
             </div>
-
-            <span
-              class="text-xs font-semibold px-3 py-1 rounded-full
-                     bg-cyan-50 text-cyan-600"
-            >
-              DataCamp
-            </span>
-
-          </div>
-
-          <h3 class="font-bold text-lg mt-5 dark:text-white">
-            Introduction to Docker
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Containerization fundamentals and Docker-based
-            application environments.
-          </p>
-
-          <a
-            href="/certificates/certificate-Introduction to Docker.pdf"
-            target="_blank"
-            class="inline-flex items-center gap-2 mt-5 text-blue-600 hover:underline text-sm font-medium"
-          >
-            View Certificate →
-          </a>
-
-        </div>
-
-
-        <!-- PYSPARK -->
-
-        <div
-          class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md
-                 border border-gray-100 dark:border-gray-700
-                 hover:-translate-y-1 transition"
-        >
-
-          <div class="flex items-start justify-between">
-
-            <div
-              class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30
-                     flex items-center justify-center"
-            >
-              <iconify-icon
-                icon="tabler:brand-python"
-                class="text-2xl text-orange-600"
-              />
+            <div>
+              <p class="font-semibold dark:text-white">RAG & Agentic AI Professional Certificate</p>
+              <p class="text-sm text-gray-500">Coursera · In Progress</p>
             </div>
-
-            <span
-              class="text-xs font-semibold px-3 py-1 rounded-full
-                     bg-orange-50 text-orange-600"
-            >
-              DataCamp
-            </span>
-
           </div>
-
-          <h3 class="font-bold text-lg mt-5 dark:text-white">
-            Introduction to PySpark
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Large-scale data processing with Python and Apache Spark.
-          </p>
-
-          <a
-            href="/certificates/certificate-introPySpark.pdf"
-            target="_blank"
-            class="inline-flex items-center gap-2 mt-5 text-blue-600 hover:underline text-sm font-medium"
-          >
-            View Certificate →
-          </a>
-
+          <a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 text-sm font-medium shrink-0">Coursera →</a>
         </div>
-
-
-        <!-- AI -->
-
-        <div
-          class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md
-                 border border-gray-100 dark:border-gray-700
-                 hover:-translate-y-1 transition"
-        >
-
-          <div class="flex items-start justify-between">
-
-            <div
-              class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30
-                     flex items-center justify-center"
-            >
-              <iconify-icon
-                icon="tabler:sparkles"
-                class="text-2xl text-purple-600"
-              />
-            </div>
-
-            <span
-              class="text-xs font-semibold px-3 py-1 rounded-full
-                     bg-purple-50 text-purple-600"
-            >
-              AI Course
-            </span>
-
-          </div>
-
-          <h3 class="font-bold text-lg mt-5 dark:text-white">
-            Understanding Artificial Intelligence
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Foundations of Artificial Intelligence, AI concepts,
-            logic, and responsible AI.
-          </p>
-
-          <a
-            href="/certificates/certificateUnderstanding of artificial intelligence.pdf"
-            target="_blank"
-            class="inline-flex items-center gap-2 mt-5 text-blue-600 hover:underline text-sm font-medium"
-          >
-            View Certificate →
-          </a>
-
-        </div>
-
-
-        <!-- PANDAS -->
-
-        <div
-          class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md
-                 border border-gray-100 dark:border-gray-700
-                 hover:-translate-y-1 transition"
-        >
-
-          <div class="flex items-start justify-between">
-
-            <div
-              class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-900/30
-                     flex items-center justify-center"
-            >
-              <iconify-icon
-                icon="tabler:table"
-                class="text-2xl text-indigo-600"
-              />
-            </div>
-
-            <span
-              class="text-xs font-semibold px-3 py-1 rounded-full
-                     bg-indigo-50 text-indigo-600"
-            >
-              DataCamp
-            </span>
-
-          </div>
-
-          <h3 class="font-bold text-lg mt-5 dark:text-white">
-            Data Cleaning & Preprocessing with Pandas
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Data cleaning, preprocessing, transformation,
-            and preparation using Pandas.
-          </p>
-
-          <a
-            href="/certificates/Data Cleaning and Preprocessing with pandas.pdf"
-            target="_blank"
-            class="inline-flex items-center gap-2 mt-5 text-blue-600 hover:underline text-sm font-medium"
-          >
-            View Certificate →
-          </a>
-
-        </div>
-
-
-        <!-- ORACLE -->
-
-        <div
-          class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md
-                 border border-gray-100 dark:border-gray-700
-                 hover:-translate-y-1 transition"
-        >
-
-          <div class="flex items-start justify-between">
-
-            <div
-              class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30
-                     flex items-center justify-center"
-            >
-              <iconify-icon
-                icon="tabler:cloud"
-                class="text-2xl text-red-600"
-              />
-            </div>
-
-            <span
-              class="text-xs font-semibold px-3 py-1 rounded-full
-                     bg-red-50 text-red-600"
-            >
-              Oracle
-            </span>
-
-          </div>
-
-          <h3 class="font-bold text-lg mt-5 dark:text-white">
-            Oracle Cloud Infrastructure 2025
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            OCI foundations, cloud concepts, and Oracle Cloud
-            infrastructure services.
-          </p>
-
-          <a
-            href="/certificates/Oracle Cloud Infrastructure 2025-certificate.pdf"
-            target="_blank"
-            class="inline-flex items-center gap-2 mt-5 text-blue-600 hover:underline text-sm font-medium"
-          >
-            View Certificate →
-          </a>
-
-        </div>
-
-
-        <!-- RAG / AGENTIC AI -->
-
-        <div
-          class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md
-                 border border-blue-200 dark:border-blue-800
-                 hover:-translate-y-1 transition"
-        >
-
-          <div class="flex items-start justify-between">
-
-            <div
-              class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30
-                     flex items-center justify-center"
-            >
-              <iconify-icon
-                icon="tabler:robot"
-                class="text-2xl text-blue-600"
-              />
-            </div>
-
-            <span
-              class="text-xs font-semibold px-3 py-1 rounded-full
-                     bg-blue-50 text-blue-600"
-            >
-              Coursera · In Progress
-            </span>
-
-          </div>
-
-          <h3 class="font-bold text-lg mt-5 dark:text-white">
-            RAG & Agentic AI Professional Certificate
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Currently developing knowledge in Retrieval-Augmented
-            Generation, LLM applications, vector search, and
-            agentic AI concepts.
-          </p>
-
-          <a
-            href="https://www.coursera.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 mt-5 text-blue-600 hover:underline text-sm font-medium"
-          >
-            Coursera →
-          </a>
-
-        </div>
-
 
       </div>
     </div>
@@ -1450,21 +562,16 @@ const metadata = {
       },
     ]}
   >
-
     <Fragment slot="title">
       Let's build something
-      <span class="text-accent">
-        data-driven
-      </span>
+      <span class="text-accent">data-driven</span>
       together.
     </Fragment>
 
     <Fragment slot="subtitle">
-      I am currently open to internship opportunities and collaborations
-      in Data Engineering, Data Science, Artificial Intelligence,
-      Big Data, and data-driven applications.
+      I'm open to internships and collaborations in Data Engineering,
+      Data Science, and AI.
     </Fragment>
-
   </CallToAction>
 
 </Layout>
