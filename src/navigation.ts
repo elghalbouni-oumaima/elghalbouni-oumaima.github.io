@@ -167,6 +167,10 @@ export const footerData = {
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/el-ghalbouni-oumaima-a73a26331/' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/elghalbouni-oumaima' },
   ],
+  secondaryLinks: [
+    { text: 'Terms', href: '/terms' },
+    { text: 'Privacy Policy', href: '/privacy' },
+  ],
   footNote: `
    Built by Oumaima El Ghalbouni · ${new Date().getFullYear()}
   `,
