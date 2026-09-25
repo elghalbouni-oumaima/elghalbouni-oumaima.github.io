@@ -296,6 +296,10 @@ const metadata = {
   <!-- PROJECTS — Featured (rich) + More (compact) -->
   <!-- ===================================================== -->
 
+  <!-- ===================================================== -->
+  <!-- PROJECTS — Featured (rich) + More (compact) -->
+  <!-- ===================================================== -->
+
   <section id="projects" class="py-20">
     <div class="max-w-6xl mx-auto px-4">
 
@@ -310,7 +314,7 @@ const metadata = {
       <!-- Featured: pick your strongest, most complete projects -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
           <img src="/images/taasim.png" alt="TaaSim Urban Mobility Platform" class="w-full h-52 object-cover" />
           <div class="p-6">
             <h3 class="text-lg font-bold dark:text-white">TaaSim — Real-Time Urban Mobility</h3>
@@ -332,7 +336,7 @@ const metadata = {
           </div>
         </div>
 
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
           <img src="/images/data-warehouse.png" alt="End-to-End Data Warehouse" class="w-full h-52 object-cover" />
           <div class="p-6">
             <h3 class="text-lg font-bold dark:text-white">Data Warehouse & Churn Analytics</h3>
@@ -354,7 +358,7 @@ const metadata = {
           </div>
         </div>
 
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
           <img src="/images/mongodb.png" alt="FHV Trip Data Optimization" class="w-full h-52 object-cover" />
           <div class="p-6">
             <h3 class="text-lg font-bold dark:text-white">FHV Trip Data Optimization</h3>
@@ -375,7 +379,7 @@ const metadata = {
           </div>
         </div>
 
-        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
           <img src="/images/power-bi-modeling.png" alt="Power BI Data Modeling" class="w-full h-52 object-cover" />
           <div class="p-6">
             <h3 class="text-lg font-bold dark:text-white">Power BI Data Modeling</h3>
@@ -395,93 +399,96 @@ const metadata = {
 
       </div>
 
-      <!-- More Projects: compact list, no dead-end cards -->
-      <h3 class="text-2xl font-bold text-center mt-20 mb-8 dark:text-white">More Projects</h3>
+      <!-- Section divider — intentional break instead of raw whitespace -->
+      <div class="border-t border-gray-200 dark:border-gray-800 mt-16 pt-16">
+        <h3 class="text-2xl font-bold text-center mb-8 dark:text-white">More Projects</h3>
 
-      <div class="grid md:grid-cols-2 gap-4">
+        <div class="grid md:grid-cols-2 gap-4">
 
-        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
-          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
-            <iconify-icon icon="tabler:message-2" class="text-blue-600" />
-          </div>
-          <div>
-            <h4 class="font-semibold dark:text-white">AI Meeting Assistant</h4>
-            <p class="text-sm text-gray-500 mt-1">RAG + FAISS meeting summarizer, action items, and Q&A over transcripts.</p>
-            <a href="https://github.com/elghalbouni-oumaima/meeting-assistant" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
-          </div>
-        </div>
-
-        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
-          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
-            <iconify-icon icon="tabler:briefcase" class="text-blue-600" />
-          </div>
-          <div>
-            <h4 class="font-semibold dark:text-white">JobIntelligent — Job Data Platform</h4>
-            <p class="text-sm text-gray-500 mt-1">Multi-API aggregation, MinIO + PostgreSQL storage, Power BI dashboards.</p>
-            <div class="flex gap-3 mt-1">
-              <a href="https://github.com/elghalbouni-oumaima/JobIntelligent-Data-Platform" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline">GitHub ↗</a>
-              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7474995890563395584/" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline">▶ Demo</a>
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-md hover:shadow-lg transition-shadow">
+            <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+              <iconify-icon icon="tabler:message-2" class="text-blue-600" />
+            </div>
+            <div>
+              <h4 class="font-semibold dark:text-white">AI Meeting Assistant</h4>
+              <p class="text-sm text-gray-500 mt-1">RAG + FAISS meeting summarizer, action items, and Q&A over transcripts.</p>
+              <a href="https://github.com/elghalbouni-oumaima/meeting-assistant" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
             </div>
           </div>
-        </div>
 
-        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
-          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
-            <iconify-icon icon="tabler:hand-stop" class="text-blue-600" />
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-md hover:shadow-lg transition-shadow">
+            <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+              <iconify-icon icon="tabler:briefcase" class="text-blue-600" />
+            </div>
+            <div>
+              <h4 class="font-semibold dark:text-white">JobIntelligent — Job Data Platform</h4>
+              <p class="text-sm text-gray-500 mt-1">Multi-API aggregation, MinIO + PostgreSQL storage, Power BI dashboards.</p>
+              <div class="flex gap-3 mt-1">
+                <a href="https://github.com/elghalbouni-oumaima/JobIntelligent-Data-Platform" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline">GitHub ↗</a>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7474995890563395584/" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline">▶ Demo</a>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4 class="font-semibold dark:text-white">Sign Language Translation</h4>
-            <p class="text-sm text-gray-500 mt-1">Deep learning on Phoenix-2014T: 399 keypoints, sequence-based recognition.</p>
-            <a href="https://github.com/elghalbouni-oumaima/sign-language-translation" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
-          </div>
-        </div>
 
-        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
-          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
-            <iconify-icon icon="tabler:stethoscope" class="text-blue-600" />
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-md hover:shadow-lg transition-shadow">
+            <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+              <iconify-icon icon="tabler:hand-stop" class="text-blue-600" />
+            </div>
+            <div>
+              <h4 class="font-semibold dark:text-white">Sign Language Translation</h4>
+              <p class="text-sm text-gray-500 mt-1">Deep learning on Phoenix-2014T: 399 keypoints, sequence-based recognition.</p>
+              <a href="https://github.com/elghalbouni-oumaima/sign-language-translation" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
+            </div>
           </div>
-          <div>
-            <h4 class="font-semibold dark:text-white">Medical Data Management System</h4>
-            <p class="text-sm text-gray-500 mt-1">Patient data management and statistical insights (Python, MySQL, PHP).</p>
-            <a href="https://github.com/elghalbouni-oumaima/disease-management-system" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
-          </div>
-        </div>
 
-        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
-          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
-            <iconify-icon icon="tabler:cloud-rain" class="text-blue-600" />
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-md hover:shadow-lg transition-shadow">
+            <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+              <iconify-icon icon="tabler:stethoscope" class="text-blue-600" />
+            </div>
+            <div>
+              <h4 class="font-semibold dark:text-white">Medical Data Management System</h4>
+              <p class="text-sm text-gray-500 mt-1">Patient data management and statistical insights (Python, MySQL, PHP).</p>
+              <a href="https://github.com/elghalbouni-oumaima/disease-management-system" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
+            </div>
           </div>
-          <div>
-            <h4 class="font-semibold dark:text-white">Weather Application</h4>
-            <p class="text-sm text-gray-500 mt-1">Desktop app (PyQt5) with live weather data and city search.</p>
-            <a href="https://github.com/elghalbouni-oumaima/Weather-Application" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
-          </div>
-        </div>
 
-        <!-- No public link yet — labeled honestly instead of a dead-end card -->
-        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm opacity-80">
-          <div class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 shrink-0">
-            <iconify-icon icon="tabler:server-2" class="text-gray-500" />
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-md hover:shadow-lg transition-shadow">
+            <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
+              <iconify-icon icon="tabler:cloud-rain" class="text-blue-600" />
+            </div>
+            <div>
+              <h4 class="font-semibold dark:text-white">Weather Application</h4>
+              <p class="text-sm text-gray-500 mt-1">Desktop app (PyQt5) with live weather data and city search.</p>
+              <a href="https://github.com/elghalbouni-oumaima/Weather-Application" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
+            </div>
           </div>
-          <div>
-            <h4 class="font-semibold dark:text-white">Procurement Data Pipeline</h4>
-            <p class="text-sm text-gray-500 mt-1">Batch pipeline with HDFS, Hive, Trino, and Parquet — private repo.</p>
-            <a href="https://github.com/elghalbouni-oumaima/batch-procurement-data-pipeline" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
-          </div>
-        </div>
 
-        <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm opacity-80">
-          <div class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 shrink-0">
-            <iconify-icon icon="tabler:tags" class="text-gray-500" />
+          <!-- No public link yet — labeled honestly instead of a dead-end card -->
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-md hover:shadow-lg transition-shadow opacity-80">
+            <div class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 shrink-0">
+              <iconify-icon icon="tabler:server-2" class="text-gray-500" />
+            </div>
+            <div>
+              <h4 class="font-semibold dark:text-white">Procurement Data Pipeline</h4>
+              <p class="text-sm text-gray-500 mt-1">Batch pipeline with HDFS, Hive, Trino, and Parquet — private repo.</p>
+              <a href="https://github.com/elghalbouni-oumaima/batch-procurement-data-pipeline" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
+            </div>
           </div>
-          <div>
-            <h4 class="font-semibold dark:text-white">NLP Annotation Platform</h4>
-            <p class="text-sm text-gray-500 mt-1">Spring Boot annotation workflow tool with role-based access — private repo.</p>
-            <a href="https://github.com/elghalbouni-oumaima/nlp-annotation-platform" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
-          </div>
-        </div>
 
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-md hover:shadow-lg transition-shadow opacity-80">
+            <div class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 shrink-0">
+              <iconify-icon icon="tabler:tags" class="text-gray-500" />
+            </div>
+            <div>
+              <h4 class="font-semibold dark:text-white">NLP Annotation Platform</h4>
+              <p class="text-sm text-gray-500 mt-1">Spring Boot annotation workflow tool with role-based access — private repo.</p>
+              <a href="https://github.com/elghalbouni-oumaima/nlp-annotation-platform" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </div>
   </section>
 
