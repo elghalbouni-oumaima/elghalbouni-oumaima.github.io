@@ -342,6 +342,7 @@ const metadata = {
               class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
               GitHub ↗
             </a>
+            <button onclick="document.getElementById('churn-modal').classList.remove('hidden')" class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">▶App Demo</button>
           </div>
         </div>
 
@@ -397,20 +398,6 @@ const metadata = {
             <a href="https://github.com/elghalbouni-oumaima/meeting-assistant" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline mt-1 inline-block">GitHub ↗</a>
           </div>
         </div>
-
-        <!-- <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
-          <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
-            <iconify-icon icon="tabler:database" class="text-blue-600" />
-          </div>
-          <div>
-            <h4 class="font-semibold dark:text-white">FHV Trip Data Optimization</h4>
-            <p class="text-sm text-gray-500 mt-1">MongoDB indexing/sharding on 16M records: 61.8s → 7.8s query time.</p>
-            <div class="flex gap-3 mt-1">
-              <button onclick="document.getElementById('mongodb-video-modal').classList.remove('hidden')" class="text-sm text-blue-600 hover:underline">▶ Watch Demo</button>
-              <a href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-600 hover:underline">GitHub ↗</a>
-            </div>
-          </div>
-        </div>  -->
 
         <div class="flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-gray-900 shadow-sm">
           <div class="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30 shrink-0">
@@ -500,6 +487,22 @@ const metadata = {
       </button>
       <video class="w-full aspect-video" controls preload="metadata">
         <source src="/videos/mongodb-demo.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+    </div>
+  </div>
+
+  <div id="churn-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4">
+    <div class="relative w-full max-w-4xl bg-black rounded-2xl overflow-hidden shadow-2xl">
+      <button
+        onclick="document.getElementById('churn-modal').classList.add('hidden')"
+        class="absolute top-3 right-3 z-10 w-10 h-10 rounded-full bg-black/70 text-white text-xl hover:bg-gray-800 transition"
+        aria-label="Close video"
+      >
+        ✕
+      </button>
+      <video class="w-full aspect-video" controls preload="metadata">
+        <source src="/videos/churn-prediction-app-demo.mp4" type="video/mp4" />
         Your browser does not support the video element.
       </video>
     </div>
