@@ -305,69 +305,75 @@ const metadata = {
       </div>
 
       <!-- Featured: pick your strongest, most complete projects -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-          <img src="/images/taasim.png" alt="TaaSim Urban Mobility Platform" class="w-full h-44 object-cover" />
+          <img src="/images/taasim.png" alt="TaaSim Urban Mobility Platform" class="w-full h-52 object-cover" />
           <div class="p-6">
             <h3 class="text-lg font-bold dark:text-white">TaaSim — Real-Time Urban Mobility</h3>
-            <p class="text-sm text-blue-600 mt-2">Kafka • Flink • Spark • Cassandra</p>
+            <p class="text-sm text-blue-600 mt-2">Kafka • Flink • Spark • Cassandra • MinIO • Docker</p>
             <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
               Kappa-architecture platform for real-time mobility data: Kafka
               ingestion, Flink streaming, and ML demand forecasting.
             </p>
-            <a href="https://github.com/elghalbouni-oumaima/taasim-urban-mobility-platform" target="_blank" rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
-              GitHub ↗
-            </a>
-            
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7475355956491563008/" target="_blank" rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
-              ▶Demo
-            </a>
-
+            <div class="flex flex-wrap gap-3 mt-5">
+              <a href="https://github.com/elghalbouni-oumaima/taasim-urban-mobility-platform" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+                GitHub ↗
+              </a>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7475355956491563008/" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-lg text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
+                ▶ Demo
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-          <img src="/images/data-warehouse.png" alt="End-to-End Data Warehouse" class="w-full h-44 object-cover" />
+          <img src="/images/data-warehouse.png" alt="End-to-End Data Warehouse" class="w-full h-52 object-cover" />
           <div class="p-6">
             <h3 class="text-lg font-bold dark:text-white">Data Warehouse & Churn Analytics</h3>
-            <p class="text-sm text-blue-600 mt-2">SQL Server • Airflow • FastAPI</p>
+            <p class="text-sm text-blue-600 mt-2">SQL Server • Power BI • FastAPI</p>
             <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
               Bronze/Silver/Gold warehouse with 19 data-quality checks and a
               churn model at 97% recall, served via FastAPI + Power BI.
             </p>
-            <a href="https://github.com/elghalbouni-oumaima/end-to-end-data-warehouse-with-sql" target="_blank" rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
-              GitHub ↗
-            </a>
-            <button onclick="document.getElementById('churn-modal').classList.remove('hidden')" class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">▶App Demo</button>
+            <div class="flex flex-wrap gap-3 mt-5">
+              <a href="https://github.com/elghalbouni-oumaima/end-to-end-data-warehouse-with-sql" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+                GitHub ↗
+              </a>
+              <button onclick="document.getElementById('churn-modal').classList.remove('hidden')"
+                class="inline-flex items-center gap-2 border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-lg text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
+                ▶ App Demo
+              </button>
+            </div>
           </div>
         </div>
 
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-          <img src="/images/mongodb.png" alt="Phishing Early Warning System" class="w-full h-44 object-cover" />
+          <img src="/images/mongodb.png" alt="FHV Trip Data Optimization" class="w-full h-52 object-cover" />
           <div class="p-6">
-            <div class="flex justify-between items-start gap-2">
-              <h3 class="text-lg font-bold dark:text-white">FHV Trip Data Optimization</h3>
-            </div>
-            <p class="text-sm text-blue-600 mt-2">MongoDB • Python • Dash (Visualisation)</p>
+            <h3 class="text-lg font-bold dark:text-white">FHV Trip Data Optimization</h3>
+            <p class="text-sm text-blue-600 mt-2">MongoDB • Python • Dash</p>
             <p class="text-gray-600 dark:text-gray-300 mt-3 text-sm">
-              MongoDB indexing/sharding on 16M records: 61.8s → 7.8s query time.
+              MongoDB indexing on 16M records: 61.8s → 7.8s query time.
             </p>
-            </div>
-            <div class="flex gap-3 mt-1">
+            <div class="flex flex-wrap gap-3 mt-5">
               <a href="https://github.com/elghalbouni-oumaima/fhv-tripdata-mongodb-optimization" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
                 GitHub ↗
               </a>
-              <button onclick="document.getElementById('mongodb-video-modal').classList.remove('hidden')" class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">▶Demo</button>
+              <button onclick="document.getElementById('mongodb-video-modal').classList.remove('hidden')"
+                class="inline-flex items-center gap-2 border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-lg text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
+                ▶ Demo
+              </button>
             </div>
+          </div>
         </div>
 
         <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
-          <img src="/images/power-bi-modeling.png" alt="Power BI Data Modeling" class="w-full h-44 object-cover" />
+          <img src="/images/power-bi-modeling.png" alt="Power BI Data Modeling" class="w-full h-52 object-cover" />
           <div class="p-6">
             <h3 class="text-lg font-bold dark:text-white">Power BI Data Modeling</h3>
             <p class="text-sm text-blue-600 mt-2">Power BI • Star Schema • DAX</p>
@@ -375,14 +381,17 @@ const metadata = {
               Rebuilt a "nightmare" dataset — 23+ disconnected, duplicated
               tables — into a clean, business-ready star schema.
             </p>
-            <a href="https://github.com/elghalbouni-oumaima/power-bi-data-modeling" target="_blank" rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 mt-5 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
-              GitHub ↗
-            </a>
+            <div class="flex flex-wrap gap-3 mt-5">
+              <a href="https://github.com/elghalbouni-oumaima/power-bi-data-modeling" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+                GitHub ↗
+              </a>
+            </div>
           </div>
         </div>
 
       </div>
+    </div>
       <!-- More Projects: compact list, no dead-end cards -->
       <h3 class="text-2xl font-bold text-center mt-20 mb-8 dark:text-white">More Projects</h3>
 
